@@ -4,7 +4,7 @@ From Barton Poulson
 
 # Introduction to data science
 
-People usually see data as a too techy discipline with maths and labs but it is much more a creative discipline: you use tools from coding, stats & maths to work creatively with data in order to finfd a way to solve problems, and get insights from data. For that, you try to listen to almost all your data as **everything signifies**.
+People usually see data as a too techy discipline with maths and labs but it is much more a creative discipline: you use tools from coding, stats & maths to work creatively with data in order to find a way to solve problems, and get insights from data. For that, you try to listen to almost all your data as **everything signifies**.
 
 This course gives a map of data science and how we can use it.
 
@@ -163,8 +163,60 @@ Wave your DIY (Do It Yourself) flag.
 
 
 ### Machine Learning
+Intersection between coding & stats. It can be used to categorize and predict information from data:
+- work in a **data space** to reduce te dimensionality, and then use clustering or K-Means methods, and find anomalies or unusual cases in the data space.
+- work with **categories** with algorithms such as logistic regression, kNN, Naive Bayes, Decision Trees, SVM or artifical neural nets, to find patterns in the data to get similar cases next to each other.
+- **predictions**: linear regression, poisson regression for modeling count or frequency data, ensemble models putting together predictions from many simpler models.
 
 
+## Communicating
+
+### Interpretability
+You want to tell a data driven story. When doing the analysis, we are trying to solve for **value**: $Analysis \times Max(Story) = Max(Value)$. Analysis is goal-driven. The explanation or story given about the project should match those goals. Answer clients questions clearly and unambiguously.
+Remember the client isn't you, and think of:
+- Egocentism: They don't see, know or undertstand thing sthe same way you do. 
+- False consensus: ideas that everybody knows something.
+- Anchoring: initial impressions matter a lot. Watch out.
+- Clarity at each step.
+Think of the **answers**: staet the question, answer it, qualify as needed and go in order but don't spend too much time on discssing the process technically. 
+The process is to remember that *analysis* means simplifying. According to Einstein: **everythig should be made as simple as possible but not simpler**. hink of the minimum viable analysis:
+- more charts, less text
+- simplfy charts
+- avoid tables (they are hard to read)
+- less text (again).
+In 1973, graduate school admissions revealed that the male admission rate was hgher than the female one: $44\%$ against $35\%$. It seems to a lawsuit. However after breaking the application down by programs, it was found that there are some programs were women were accepted in a higher rate and some they were not. In Statistics, this is known as **Simpson's Paradox**. The paradox is that bias might be negligible at department level but still there might be some bias there in favor of women. The roblem is women applied to more slective programs. There are many other questions that can still be answered and things we can look for as admission criteria, promoional strategies, prior education and funding levels. 
+In sum, stories give value to data analysis and should be telled in a clear way, minimally sufficient.
+
+
+### Actionable insights
+Those are information that can be used productively to accomplish something. William James idea: **My thinking is first and last and always for the sake of my doing** applies to analysis. When doing an analysis, point the way (analysis guide action). You should be able to tell the clients what are the next steps (what they need to do now), justifyng those recommendations with data. You should be specific and make sure they are able to do them sep by step. 
+The problem here is the difference between **correlation** and **causation**. Data ives correlation (this is associated with that), but the client wants causation (this causes that). There are few ways to get that:
+- Experimental studies: randomized controlled trials
+- Quasi-experiments: methods that use non-randomized data for causal inference
+- Theory & experience: research vbased theory and domain-specific experience
+There are also social factors affecting the data.
+![Data & Social](./images/ds_social.png)
+We should make sure our recommendation follow: the client's mission (what he does), identity (who he is), its business context (competitive environment) ut also the social context (outsde and inside the company).
+
+### Presentation graphics
+Trying to paint a picture for the benefits of the client:
+- Exploratory graphics: speed and responsiveness, for our insights.
+- Presentation graphics: clarity & narrative flow. Avoid too much colors, 3D, interaction and animation as the client should not be distracted.
+
+### Reproducible research
+Data science projects tend to be incremental, cumulative and adaptive. So, **show your work**. You may need to revise your research later, or borrow something from previous studies, hand off to someone else, and also about accountability to show you did things in a responsive way. 
+There is a platform called the [open data science conference](https://odsc.com/) devoted to open data science using open data and making methods transparent. The [open science framework](https://osf.io/) is a way of sharing data and research with anotations of how to get to the results. The [asssociation for psychological science](https://www.psychologicalscience.org/) strongly encourages people to share their data as much as possible and their methods to conduct studies.
+It is important to archive your data: both the totally raw and the processed, all code to process and analyze data, making sure to comment liberally and explain yourself (why you did the way you did, include choices and consequences, backtracking).
+This helps to future roof you work. Some useful principles:
+- Store data in non-proprietary formats, like csv
+- Place files in accessible location like GitHub.
+- Code: using dependency management: packrat for R, virtualenv for Python.
+Putting the narrative in a notebook can help to explain yourself. R Markdown can be used for R code (docs can be uploaded as RPubs to be accessible online) and Jupyter Notebook for Python.
+
+
+## Conclusion
+
+Remember it is important to give people next steps. You can start doing some coding, visulalization or learn some stats & maths or even ML. But try to keep wha you do in context. You can also get invlved in a=one community of data science like O'Reilly Strata, Predictive Analysis World, Tapestry Conference, Extract by import.io. To start working a great choice is [kaggle](https://www.kaggle.com/). Once done, you might want to do some service: [DataKind](https://www.datakind.org/) is the premiere organization for data science as humanitarian service. Only remember that: data science is democratic. DATA SCIENCE NEED YOU!
 
 
 ---
