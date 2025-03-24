@@ -218,5 +218,78 @@ Putting the narrative in a notebook can help to explain yourself. R Markdown can
 
 Remember it is important to give people next steps. You can start doing some coding, visulalization or learn some stats & maths or even ML. But try to keep wha you do in context. You can also get invlved in a=one community of data science like O'Reilly Strata, Predictive Analysis World, Tapestry Conference, Extract by import.io. To start working a great choice is [kaggle](https://www.kaggle.com/). Once done, you might want to do some service: [DataKind](https://www.datakind.org/) is the premiere organization for data science as humanitarian service. Only remember that: data science is democratic. DATA SCIENCE NEED YOU!
 
+---
+
+# Data Sourcing
+No data no data science. This course is about different methods to obtain data for analyses.
+
+## Measurement
+
+### Metrics
+Data science is action oriented. The goal should be explicit and clear for the client and can help the analysts save time. It helps define success:
+- commerce: sales, new customers
+- edu: scores on test, graduation rate
+- government: housing, jobs
+- research: ability to serve the people we are trying to understand.
+There are different metrics or ways of mesuring:
+- Business metrics: sales revenue, leads generated or new customers, customer value, churn rate (loosing and gaining customers)
+- KPIs: a key performance indicator should be non-financial (measure the overall productivity), timely, ceo focus (senior management ddecide on them), simple, team-based, with significant impact (affecting more than one important outcome) and limited dark side (fewer possibility for reinforcing wrong behaviours).
+- SMART goals: Specific Measurable, Assignable, Realistic and Time-bounded.
+- Multiple goals: optimizing goals.
+Many metrics can be used to know how well the goals are reached. When there are many there is a need to optimize them. 
+
+### Accuracy
+We can get many different ways of measuring the accuracy from a classification table.
+
+![Classification Table](images/classification_table.png)
+
+Some are:
+- sensitivity: or recall or true positive rate. If there is a fire, does the alarm ring? You want to always have an alarm when there is a fire.
+$sensitivity = tp / (tp + fn)$
+- specificity: if there isn't a fire, does the alarm stay quiet? You want the alarm to stay quiet when there is no fire.
+$ specificity = tn / (tn + fp)$
+- positive predictive value: or ppv or precision. If the alarm rings, is there a fire?
+$ppv = tp / (tp + fp)$
+- negative predictive value: if the aaram doesn't ring, is there no fire?
+$npv = tn / (tn + fn)$
+The idea is to maximise an acccuracy as much as we can. We want to maximize true positives and true negatives and avoid te false ones. 
+
+### Social context of measurements
+People are people and that can affect measurements:
+- When making recommendations, it is important to respect the business model of the client organisation (it's tied to their identity). 
+- Some laws and policies or common practices may limit the way goal can be met.
+- There is compettion both between organizations as within.
+- People generally exploit and game the system.
+You should consider that to make the most out of your analysis.
+
+
+## Getting data
+
+### Use existing data
+There are any different types:
+- **In-house data**: proprietary data (from the organisation or client company) can be fast and easy with hopefully appropriate format and good documentation, with good quality. There might be some restrictions.
+- **Open data**: public (government, corporate or scientific) data that is prepared and freely available. Some example are : [US data](https://data.gov/), [Utah data](https://www.utah.gov/index.html), [EU data](https://data.europa.eu/en), [UN data](https://data.unicef.org/), [WHO data](https://www.who.int/data), [Pew Research Center data](https://www.pewresearch.org/datasets/), the [New York Times APIs](https://developer.nytimes.com/), [Google available data](https://datacommons.org/data/agriculture), [AWS Pubic datasets](https://aws.amazon.com/opendata).
+Note that those datasets can be very valuable, well-formated and documented, and also various. However, sometimes they require sharing analyses which is a concern when doing proprietary research. There might be biased samples because of Internet needs, or issue with privacy and confidentiality. The data meaning might also be unclear.
+- **Third-party data**: purchased data (DaaS: Data as a service, or Data brokers) can give enormous data on many different topics, even processing data for us. Here are some data brokers: [Acxiom](https://www.acxiom.com/) primarily for marketing data, [Nielsen](https://www.nielsen.com/) primarily for media consumption and [datasift](https://www.datasift.com.tr/). Using data brokers can save time and effort, giving individual level data, and specific information. However, it can be expensive, still require a double-check, and people don't like using this option.
+
+Always pay attention to the quality, the meaning and the usability of the data.
+
+
+### Use APIs
+Application Programming Interfaces allow programs to talk to each other. It allows your program to get web data. The most common version is called **REST API** standing for Representational State Transfered . It allows to access data on web page via *HTTP* (HyperTest Transfer Protocol). The data is downloaded in *JSON* (Javascript Object Notation) format, and can be sent directly to other programs using any programming language (as they are language agnostic).
+There are **social APIs** for: Facebook, Tweitter, Google Chat, FourSquare, Souncloud; **visual APIs**: Google Maps, YouTube, AccuWeather, Pinterst, Flickr.
+We can program APIs in **R**, **Python**, **Bash**, etc.
+
+### Scraping data
+
+
+
+
+
+
+
+
+
+
 
 ---
