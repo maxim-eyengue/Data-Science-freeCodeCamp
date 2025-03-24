@@ -181,7 +181,7 @@ Remember the client isn't you, and think of:
 Think of the **answers**: staet the question, answer it, qualify as needed and go in order but don't spend too much time on discssing the process technically. 
 The process is to remember that *analysis* means simplifying. According to Einstein: **everythig should be made as simple as possible but not simpler**. hink of the minimum viable analysis:
 - more charts, less text
-- simplfy charts
+- simplify charts
 - avoid tables (they are hard to read)
 - less text (again).
 In 1973, graduate school admissions revealed that the male admission rate was hgher than the female one: $44\%$ against $35\%$. It seems to a lawsuit. However after breaking the application down by programs, it was found that there are some programs were women were accepted in a higher rate and some they were not. In Statistics, this is known as **Simpson's Paradox**. The paradox is that bias might be negligible at department level but still there might be some bias there in favor of women. The roblem is women applied to more slective programs. There are many other questions that can still be answered and things we can look for as admission criteria, promoional strategies, prior education and funding levels. 
@@ -281,15 +281,29 @@ There are **social APIs** for: Facebook, Tweitter, Google Chat, FourSquare, Soun
 We can program APIs in **R**, **Python**, **Bash**, etc.
 
 ### Scraping data
+Scraping data is pulling information from web pages. We use this technique when there is no immediate way to get the data we can see. From that we can scrape html text, or tables, pdfs, and media. Always pay attention to copyright and privacy. There many ways to do web scraping:
+- use apps: import.io, ScraperWiki, Tabula, Google Sheets, Excel.
+- code your scraper with: R, Python, Bash, Java or PHP.
+You are gonnae be looking for information in web pages. If looking for **HTML Text**, you will pull structured text from web pages, using HTML tags like <*body*> <*h1*> or <*p*>. For **HTML tables**, you will use HTML table tags like like <*table*> <*tr*> or <*td*> but you need the table number that you mind find after trials and errors. You  can also scrape data from **pdfs** (native: text pdf, or scanned: image pdf) by looking for text elements, dealing with raster/vector images and also with tabular data using special programs like Tabula or ScraperWiki. Finally we can scrape **media** like images, video or audio. To read the data, we might need a program looking pixel by pixel in each image.
 
 
+### Making data
+Can't find the data you need? DIY
+Depending on your role to get the data (passive or active), the type of data you want (quantitative or qualitative) and how you want to et it (online or in person), there are some options:
+- **interviews**: a conversation used for the most basic problem. When you are working with a new topic, a new audience, or you need to find ways to improve. You don't want to constratint responses. Interviews can be structured with predetermined questions or unstructured. They require time and training, and answers eed to be analysed.
+- **surveys**:  if you want to know something, just ask. Here you need to know enough the topic and the audience to anticipate the answers. You can have a *closed ended* surveys with forced choices, *open ended* ones, *in person* or *online*. Common applications for online surveys are **SurveyMonkey**, **Qualtrics**, **Google Forms** and **Typeform**. Note that when surveys are easy to set up, questions can be ambiguous, and response scales confusing.
+- **card sorting**: important in web research. To do so, you write topics on crads, physcally or digially and ask people to sort those crads so that you can compute dissimilarity data (distance betwee topics). There are *generative* card sorting tasks where each respondent create their own sets, used to design wesites, and *evaluative* where ther is a fixed number of categories, used to check if the navigation is intuitive. You end up with a **dendogram**: hierarchical visulaization.
+![Dendrogram](images/dendrogram.png)
+For digital card sorting, you can use Optimal Worksop, UserZoom or UXSuite.
+- **Experiments**: *laboratory* where you design the situation, *A/B testing* an automated online testing of two or more variations. Lab experiments helps to determine better **cause and effects**. Here reasearchers can play an active role with manipulation. Experiments are focused research, hypothesis driven with random assignment to minimize of confounds and artifacts.
+A/B testing : you create a multiple versions, randomly assign version to visitors, compare response rates (time on page, mouse tracking, click-throughs, shopping cart value, abandonment), and implement the best variation.  A/B testing can be performed continuously. There are some softwares to do it: **Optimizely**, **VWO**, etc.
 
+## Conclusion
+See what you already have, exploring some open data sources. Cnsidere making new data if they don't give you what you need.
 
+---
 
-
-
-
-
+# Coding in data science
 
 
 ---
