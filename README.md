@@ -4,15 +4,14 @@ Welcome to my repository documenting my journey through the [freeCodeCamp Data S
 
 ## Repository Structure
 
-The repository is organized so that each video is represented as its own folder. 
+The repository is organized so that each video is represented as its own folder.
 Below is the list of videos covered in this playlist. Click on the folder names  to access the video on Youtube detailed notes and associated projects.
 
-- **[Learn Data Science Tutorial - Full Course for Beginners](./01-data-science-non-technical-overview/README.md)**  
+- **[Learn Data Science Tutorial - Full Course for Beginners](./01-data-science-non-technical-overview/README.md)**
   *Watch it on [YouTube](https://www.youtube.com/watch?v=ua-CiDNNj30&list=PLWKjhJtqVAblQe2CCWqV4Zy3LY01Z8aF1&index=1&t=1416s)*
 
 - **[Statistics - A Full University Course on Data Science Basics](./02-statistics-ds-basics/README.md)**  
   *Watch it on [YouTube](https://www.youtube.com/watch?v=xxpc-HPKN28&list=PLWKjhJtqVAblQe2CCWqV4Zy3LY01Z8aF1&index=2&t=27s)*
-
 
 *(I will add more progressively)*
 

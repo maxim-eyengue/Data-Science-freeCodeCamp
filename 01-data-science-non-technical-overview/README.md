@@ -308,12 +308,63 @@ See what you already have, exploring some open data sources. Cnsidere making new
 We are gonna take a look at tools in Data Science and their place.
 Note that data science is much more than the tools involved. We will need at least a few tools.
 
-For getting started, we need spreadsheets, Tableau for data visualisation, the format used in web data (not a tool bu  very informative). Essentials tools include R for data, the general purpose programming language Python, and the database language SQL. Beyond that, there are the general purpose programming languages C, C++, Java used for high level production code, bash, and regex.
+For getting started, we need spreadsheets, Tableau for data visualisation, the format used in web data (not a tool but very informative). Essentials tools include R for data, the general purpose programming language Python, and the database language SQL. Beyond that, there are the general purpose programming languages C, C++, Java used for high level production code, bash, and regex.
 Don't forget the Pareto principle. It states that for many outcomes, roughly 80% of consequences come from 20% of causes.
 ![Pareto Principle with data tools](images/pareto_law.png)
 You don't have to know everything but you should focus on the tools that are going to be most productive for you.
 
 ## Applications
+We will talk about programs crceated to manipulate data.
+
+### Spreadsheets
+They are easy to use and everywhere: a lot of companies use data in spreadsheets format. `.csv` is  sort of universal format for data transfer. Note that Excel is above Hadoop and Spark in the ranking of major big data fancy tools.
+Spreadsheets are goof for data browsing, sorting and rearranging data, finding and replacing, formatting (conditional formatting), for transposing data (switching rows and columns), for tracking changes (even though you might be using GitHub for that), for making pivot tables (to explore data intuitively), for arranging the output for consumptions.
+With spreadshhets, we need to make sure the data is **tidy** so it works well when transfering it. For that:
+column = variable, row = case, one sheet per file, and one level of measurement (indicidual, organisation, state) per file.
+
+### Tableau
+It is a visualization program. When we have data the most important thing to do is to look into that data. Tableau Public is the free version that publishes dashboards online.
+
+### SPSS
+Statistical Package for the Social Sciences is pretty big desktop program used in academic or medical research, business consulting and management. It is powerful but quite expensive.
+SPSS looks like Excel but with much more options, and has a lot of sample datasets. It generates an output file that can be downloaded. Syntax files offer the possibility to copy code and save it as a text file, so to replicate analyses.
+
+### [JASP](https://jasp-stats.org/)
+It is the free version of SPSS. It is also open source, intuitive, making analyses replicable and it includes Bayesian approaches. The layout is similar to SPSS.
+You can add the skewness or the kurtosis (measure of the presence of extrem values) in your data summary table. Note that you can also share the information online through [OSF (Open Science Framework)](https://osf.io/). 
+
+### Other software
+There is so much more:
+- SAS: very powerful analytical program. The SAS University Edition is free for students. JMP is a visualization program from SASA.
+- STATA, Minilab, Matlab, Mathematica (language)
+- WolframAlpha: analyses, regressio models, visualizations
+- For data mining: RapidMiner, KNIME, Orange.
+- For Machine Learning: BigML.
+- SOFA (Stats Open For All) Statistics, Past 3, StatCrunch for basic stats and learning.
+- XLSTAT and addin to get a lot of stats functions within Excel.
+
+Note you don't even have to try all of them. You should just use what works for you. Think of functionality, ease of use, the existence of a community (to solve problems you'll face), the cost, all this to reach you goals.
+
+
+## Web data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
