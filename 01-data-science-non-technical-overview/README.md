@@ -362,17 +362,62 @@ It is really easy to convert between the formats.
 
 ## Languages
 
+### R programming
+![Data Science Languages Ranking](images/ds_languages.png)
+R is the language of data. It is free & open source, specially developed for vector operations, with a great community, and more than 7000 packages to add capabilities. For interfaces, you can use R's IDE or use the terminal directly, or Rstudio.com, or even Jupyter. R is command line: you type lines of codes to get the commands outputs. It is nice for replicability.
+The beauty of R is in the packages available to extend its capabilities:
+- [CRAN](https://cran.rstudio.com/) (Comprehensive R Archive Network): organize packages in task views and for each one, we have datasets, manual in pdf formats and also vignettes illusrating examples.
+- Crantastic: an interface that links to CRAN but that shows the popuarity and updates of packages. Unfortyunately, it was removed from the Internet.
 
 
+### Python Programming
+It is a general purpose programeasy to use that can do it all. Python is built-in on Mac or Linux, and has a great community with thousands of packages. The only problem is there is some compatibility versions between Python versions. Python has its own IDLE, but you can run it from the terminal or from a jupyter notebook (IPython: for Interactive Python or Python in Jupyter). There are also Continuum Analytics now [Anaconda](https://www.anaconda.com/download) & Enthought Canopy now [Enthought Deployment Manager](https://assets.enthought.com/downloads/) that offers Python distributions. Python is also command line: we are typing line to code. Data Science loves Jupyter and Jupyter loves data science: text output and markdown, inline graphics, ease to organize & present in notebooks. The main Python repository is **PyPI** (Python Package Index). Familiar packages are Numpy & Scipy for scientific computing, Matplotlb & Seaboorn for data visualization, Pandas for statistical analyses and scikit-learn for ML.
 
 
+### SQL (Structured Query Language)
+It is the language of databases (where the data is), that can be used i different applications. It is designed for relational databases, which are ways of storing structured data, and helps manipulate data s we can export them intoanalyical applications.
+**RDBMS** are relational daabase management systems  where we usually manipulate data with SQL. Some freee an open source versions are Oracle Database, Microsoft SQL Server, MySQL, PostgreSQL. Databases minimize redundancy by using connected tables. There are some graphical user interfaces (GUI) like: SQL Developer, SQL Server Management Studio, [Toad](https://toadworld.com/products/), etc. and also any command line interface or any interactive devolpement environment or programming tool.
+Some basic SQL commands are: 
+```sql
+Select -- to choose the case to include
+From -- to specify the table
+Where -- for conditions
+Order by -- order to put them together
+```
+You don't have to be a ninja. Handful commands will be enough.
 
 
+### C, C++, Java
+There are most often seen in the bedrock: the absolute foundamental layer that makes the rest of data science possible.
+**C** and **C++** are from 1960s and 1980s. They are widely used, and very fast and stable, which makes them suitable for production level code and sever use. They can be used in R.
+**Java** is based on C/C++, and can be run anywhere (WORA: write once run everywhere). Its portability makes it the most popular language overall against all tech siuations. When something has to be fast and should not break, it is generally used, and typically by engineers (for the back end of data science).
 
 
+### Bash
+It is accessible on the command line interface: which is only a method of interacting. Shells are languages that help the user interact with the operating system. On Macs & Linux, the most common is **Bash**: Bourne Again Shell. On Windows, there is **PowerShell**. There are other versions: Bourne Shell, C Shell, Z Shell, fish, etc.
+Good to know:
+- $ indicates the prompt (type your command here).
+- We type one line at a time.
+- we can run scripts to execute more than one line.
+In Bash, there are utilities (specific programs accomplishing specific tools). There are tw categories of utilities:
+- **Built-ins**: *cat*: catenate to put information together, *awk* for text processing, *grep* for global search with a regular expression and print, *sed* for stream editor, to transform text. Some others are *head* & *tail*, to display the first or last lines of a document, *sort* & *uniq* to sort and count unique answer in a document, *wc* for the words count, and *printf* to format the outputin the console.
+- **Installables**: *jq* for pulling in json data from the web, *json2csv* for file conversion, *Rio* to run R commands as part of bash, *BigMLer* to access BigML server through the command line. 
+
+Utilities are fast easy and very practical.
 
 
-
-
+### Regex
+To be able to find the things you are looking for, regular expressions is a great method. Regular expressions are a form of pattern matching in text. We can write specific or very general patterns to search data and export it elsewhere for analyses. To search for text, in all text files in ".txt" format, that start with "l" and then continues with one character following, and then with "ve", we can write:
+```bash
+grep ^l.ve *.txt
+```
+In terms of the actual notes involved in regular expressions, there are certain elements:
+- **literals**: that mean exactly what they are, i.e: "l"
+- **metacharacters**: sort of chracters secifying things need to be there, i.e: "."
+- **escape sequences**: to look for a period as opposed to a placeholder, i.e: "\n"
+- **search expression**: the expression created, i.e: "^l.ve"
+- **target string**: the thing we are searching through, i.e: *.txt for files when using grep.
+![Quick Search](images/regex_elts.png)
+[Regex Golf](http://alf.nu/RegexGolf) is a nice platform to play with regular expressions.
 
 ---
