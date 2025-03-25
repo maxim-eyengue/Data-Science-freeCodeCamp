@@ -420,4 +420,14 @@ In terms of the actual notes involved in regular expressions, there are certain 
 ![Quick Search](images/regex_elts.png)
 [Regex Golf](http://alf.nu/RegexGolf) is a nice platform to play with regular expressions.
 
+
+## Conclusion
+
+You can start working with some tools but remember t=data tools are different from data science. Data Science is much more!!! Tools are just means and you do not need to know all of them. Focus on what is most suitable to you and your goals of extracting meaning from data. Here are some recommendations:
+[Tools Recommendations](images/coding_tools.png)
+
+---
+
+# Mathematics in sata science
+
 ---
