@@ -305,5 +305,16 @@ See what you already have, exploring some open data sources. Cnsidere making new
 
 # Coding in data science
 
+We are gonna take a look at tools in Data Science and their place.
+Note that data science is much more than the tools involved. We will need at least a few tools.
+
+For getting started, we need spreadsheets, Tableau for data visualisation, the format used in web data (not a tool bu  very informative). Essentials tools include R for data, the general purpose programming language Python, and the database language SQL. Beyond that, there are the general purpose programming languages C, C++, Java used for high level production code, bash, and regex.
+Don't forget the Pareto principle. It states that for many outcomes, roughly 80% of consequences come from 20% of causes.
+![Pareto Principle with data tools](images/pareto_law.png)
+You don't have to know everything but you should focus on the tools that are going to be most productive for you.
+
+## Applications
+
+
 
 ---
