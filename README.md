@@ -14,7 +14,7 @@ Below is the list of videos covered in this playlist. Click on the folder names 
   *Watch it on [YouTube](https://www.youtube.com/watch?v=xxpc-HPKN28&list=PLWKjhJtqVAblQe2CCWqV4Zy3LY01Z8aF1&index=2&t=27s)*
 
 
-*(Add more as needed)*
+*(I will add more progressively)*
 
 ## How to Use this Repository
 
