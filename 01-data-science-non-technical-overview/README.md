@@ -348,12 +348,19 @@ Note you don't even have to try all of them. You should just use what works for 
 
 ## Web data
 
+### HTML
+**HTML** (Hyper Text Markup Language) is used to build the content of web pages from text and tags that define the document's structure. Some tags are: <*body*>...</*body*> for the text body, <*p*>...</*p*> for paragraphs, <*h1*>...</*h1*> for header 1, <*td*>...</*td*> for table dataor the cell in a table. **CSS** (Cascading Style Sheets) helps to define the appearance of the document.
+
+### XML
+**XML** (eXtensible Markup Language) is semi-structured data, tags defining data so the computer knows what it is. Note that unlke HTML, the tags are free to be defined anyway we want. We will often see xml files in web data, Microsoft Office (.docx, .xlsx --> x for eXtensible), iTunes library information, data files. Tags also use opening and closing brackets: <*genre*>...</*genre*>. A right click on a web page followed by a left click on view page source helps to visualize the xml or html code of a web page. We can use APIs to access xml data and also convert xml data easily to different formats (xml to csv and vice versa, html to xml).
+
+### JSON
+Like XML, **JSON** (JavaScript Object Notation) is semi-structured data. When XML gives meaning to text and allows for comments and metadata in tags, JSON is specifically designed for data interchange, with a structure that corresponds with data structures: strings, dictionaries, etc.
+
+It is really easy to convert between the formats.
 
 
-
-
-
-
+## Languages
 
 
 
