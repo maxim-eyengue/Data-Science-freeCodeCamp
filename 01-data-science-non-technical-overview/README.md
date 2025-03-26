@@ -428,6 +428,37 @@ You can start working with some tools but remember t=data tools are different fr
 
 ---
 
-# Mathematics in sata science
+# Mathematics in data science
+Math matters to data science. There are few ways why it does:
+- it allows to know which procedures to use and why, to answer questions in the best way.
+- it helps to know what to do when things don't work right.
+- some math is easier by hand than using computers
+Which math?
+- Algebra: We will focus on three kinds: Elementary algebra (regular $x + y$), linear (matrix) algebra (used by computers for calculations), systems of linear equations.
+- Calculus, Big O (speed of complexity of operations), probability theory, Bayes theory (changing the way analyses are interpreted using posterior probabilities).
+Remember  You can do it!
+
+##  Foundations
+### Elementary Algebra
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
