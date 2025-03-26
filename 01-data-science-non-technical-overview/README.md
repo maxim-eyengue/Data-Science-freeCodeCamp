@@ -460,6 +460,20 @@ There are times you try to solve many unknowns simultaneously, knowing a lot of 
 Solving that help us to understand $60$ cases were sold at $\$20$ each and $940$ at $\$5$ each. The solution can also be obtained by drawing: 
 ![Graphical solution](images/graph_solution.png)
 
+### Calculus
+Formalized by Newton and Leibniz, Calculus is the latin for stone (as those used for tallying). Importance of Calculus in data science:
+- Basis: Least square regression, probability distributions, etc.
+- Change: measuring quantities or rates that change over time.
+- Min/Max: finding maxima & minima functions in optimizing.
+There are two kind of calculus:
+- Differential calculus: or calculus of change to talk about rates of change at specific time.
+- Integral calculus: or calculus of accumulation, to calculate the quantity of something at a specific time, given the rate of change. 
+![Slope computation](images/slope_eq_derivative.png)
+The slope at any given point of a curve is given by its derivative. We can use these procedures to optimize decisions.
+
+
+### Calculus & Optimization
+The place where Math meets reality. Calculus makes it possible to find values that maximize or minimize outcomes. For example, if you want to maximize your revenue from pricing dating services, you can use calculus.
 
 
 
