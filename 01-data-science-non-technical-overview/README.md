@@ -436,19 +436,29 @@ Math matters to data science. There are few ways why it does:
 Which math?
 - Algebra: We will focus on three kinds: Elementary algebra (regular $x + y$), linear (matrix) algebra (used by computers for calculations), systems of linear equations.
 - Calculus, Big O (speed of complexity of operations), probability theory, Bayes theory (changing the way analyses are interpreted using posterior probabilities).
-Remember  You can do it!
+Remember: You can do it!
 
 ##  Foundations
 ### Elementary Algebra
+Nothing is more foundational than elementary algebra. Algebra means restoration. Algebra aligns to combine multiple scores, get a singe outcome, with calculations easy for one case at a time, especially when doing it by hand. For example, it is possible to determine an output i.e a salary in function of some parameters i.e constant (base salary), years of experience, bargaining skills, number of working hours and an error term.
+![Equation](images/alg_equation.png)
 
+### Linear Algebra
+Welcome to the matrix! There are some terms we need to be familiar with:
+- scalar: one number.
+- vector: row or column of numbers, that can be treated as aa collection (usually a variable).
+- matrix: many rows & columns.
+Machines loves matrices as they understand numbers. We can used them to compute outputs for many cases.
+![Salary for two persons](images/salary_matrices.png)
+We then get the matrix notation:
+$$Y = X\beta + \epsilon.$$
+with $Y$ the vector of outcomes, $X$ the entire matrix of people parameters values, $\beta$, all te regression coefficients, and $\epsilon$ the error term vector.
 
-
-
-
-
-
-
-
+### Systems of linear equations
+There are times you try to solve many unknowns simultaneously, knowing a lot of them are interlocked ($X$ depends on $Y$, and at the same time, $Y$ depends on $X$). Funnily, it is actually easier to solve that by hand and we can also use linear / matrix algebra to do it. For example, let's imagine $1000$ iPhone cases were sold, some for $\$20$, others for $\$5$, making $\$5,900$. The question is: how many were sold for each price? We can get a solution by designing a system of linear equations:
+![Linear equations system](images/lin_system.png)
+Solving that help us to understand $60$ cases were sold at $\$20$ each and $940$ at $\$5$ each. The solution can also be obtained by drawing: 
+![Graphical solution](images/graph_solution.png)
 
 
 
