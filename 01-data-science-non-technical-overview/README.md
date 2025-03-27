@@ -473,11 +473,14 @@ The slope at any given point of a curve is given by its derivative. We can use t
 
 
 ### Calculus & Optimization
-The place where Math meets reality. Calculus makes it possible to find values that maximize or minimize outcomes. For example, if you want to maximize your revenue from pricing dating services, you can use calculus.
+The place where Math meets reality. Calculus makes it possible to find values that maximize or minimize outcomes. For example, if you want to maximize your revenue from pricing online dating services, you can use calculus. Let's say annual subscriptions cost $\$500$ a year, and you usually sell 180 new ones per week. Based on some experience, you know that for each $\$5$ discount  from the subscription cost, you will get $3$ more sales. We will also assume there is no increase in overhead.
+This said , let $d$ the number of $\$5$ discounts, we get as mathematical expressions for the price: $\$500 - \$5d$, and for the number of sales: $180 + 3d$. The goal is to maximize the final revenue which is the product of the number of sales by the price of each subscription. To do so, we can first write sales ($y$) as a function of price ($x$). For tat, we will get both the Y intercept and the slope of the function. The $y$ intercept indicate the value of the function when x is 0. If $x=0,$ then $\$500 - \$5d = 0 \Leftrightarrow d = 100.$ Thus the $y$ intercept value is given by: $180 + 3(100) = 480.$ Now that we have $y$ intercept, we can find the slope of the function. The slope is defined by: change in $y$ by the change in $x$. This change in our case is function of the number of discounts $d$.
+![Slope definition](images/def_slope.png)
+This said, the slope value is $+ 3 / (-5) = - 0.6$. We then have sales as a function of price: $\text{Sales} = 480 - 0.6 \text{ price}$. Now , we can have the revenue expression:
+$\text{Revenues} = \text{Sales} * \text{price} = (480 - 0.6 \text{ price})\times\text{price} = 480 \text{ price} - 0.6 \text{ price}^2.$ For maximizing our revenue, we will get the derivative of its expression in function of price. It's: $480  - 1.2 \text{ price},$ and solve that for $0$ as it will give us the place where the revenue is at its maximum (when the slope is equal to $0$). The optimal price is then $\$400$, which give a sales volume of $240$ for a maximal revenue of $\$96,000.$ Note that this represents  a $7\%$ increase of revenue from the original price of $\$500$ for $180$ subscriptions per week. In sum, using calculus allowed to lower the cost of each subscription, increasing the sales and the total revenue.
 
-
-
-
+## Data principles
+### Big O
 
 
 

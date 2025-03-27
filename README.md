@@ -19,7 +19,9 @@ Below is the list of videos covered in this playlist. Click on the folder names 
 
 - **Learn:** Browse through the folders to read my detailed notes and follow along with the experiments I performed while watching each video.
 - **Code:** Check the `code/` sub-folders for scripts and Jupyter notebooks that accompany the lessons.
-- **Update:** I update this repository as I progress through the playlist—feel free to revisit for new insights!
+- **Update:** I update this repository as I progress through the playlist.
+
+Feel free to revisit for new insights!
 
 ## Contributing
 
