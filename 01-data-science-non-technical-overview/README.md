@@ -476,12 +476,46 @@ The slope at any given point of a curve is given by its derivative. We can use t
 The place where Math meets reality. Calculus makes it possible to find values that maximize or minimize outcomes. For example, if you want to maximize your revenue from pricing online dating services, you can use calculus. Let's say annual subscriptions cost $\$500$ a year, and you usually sell 180 new ones per week. Based on some experience, you know that for each $\$5$ discount  from the subscription cost, you will get $3$ more sales. We will also assume there is no increase in overhead.
 This said , let $d$ the number of $\$5$ discounts, we get as mathematical expressions for the price: $\$500 - \$5d$, and for the number of sales: $180 + 3d$. The goal is to maximize the final revenue which is the product of the number of sales by the price of each subscription. To do so, we can first write sales ($y$) as a function of price ($x$). For tat, we will get both the Y intercept and the slope of the function. The $y$ intercept indicate the value of the function when x is 0. If $x=0,$ then $\$500 - \$5d = 0 \Leftrightarrow d = 100.$ Thus the $y$ intercept value is given by: $180 + 3(100) = 480.$ Now that we have $y$ intercept, we can find the slope of the function. The slope is defined by: change in $y$ by the change in $x$. This change in our case is function of the number of discounts $d$.
 ![Slope definition](images/def_slope.png)
-This said, the slope value is $+ 3 / (-5) = - 0.6$. We then have sales as a function of price: $\text{Sales} = 480 - 0.6 \text{ price}$. Now , we can have the revenue expression:
+This said, the slope value is $+ 3 / (-5) = - 0.6$. We then have sales as a function of price: $\text{Sales} = 480 - 0.6 \text{ price}$. Now, we can have the revenue expression:
 $\text{Revenues} = \text{Sales} * \text{price} = (480 - 0.6 \text{ price})\times\text{price} = 480 \text{ price} - 0.6 \text{ price}^2.$ For maximizing our revenue, we will get the derivative of its expression in function of price. It's: $480  - 1.2 \text{ price},$ and solve that for $0$ as it will give us the place where the revenue is at its maximum (when the slope is equal to $0$). The optimal price is then $\$400$, which give a sales volume of $240$ for a maximal revenue of $\$96,000.$ Note that this represents  a $7\%$ increase of revenue from the original price of $\$500$ for $180$ subscriptions per week. In sum, using calculus allowed to lower the cost of each subscription, increasing the sales and the total revenue.
 
 ## Data principles
 ### Big O
+Big O is about time: the speed of operations. "O" for order as the growth rate of a function is called its "order". Big O gives the rate of how things grow. Some kinds of growth rates (Big O):
+- The simplest: **O(1)**, the constant order: takes a certain amount of time no matter what. Sending an email to 10,000 = as for 1 person.
+- The logarithmic order: **O(log(n))** there is a small increase in function of the number of elements or operations. Ex: finding an item in a sort array.
+- The linear order **O(n)**: each operation takes a same unit of time, i.e: 50 operations - 50 amounts of time.
+- The log-linear order **O(n log(n))**: it takes longer as you should multiply the number of items by its $log$. Ex: Fourier de Transform.
+- The quadratic order **O($n^2$)**: Ex: multiplying $2$ numbers of $n$ digits takes a while.
+- The exponential order **O($2^n$)**: really demanding, i.e finding an exact solution to the traveling salesman problem, using dynamic programming.
+- The factorial rate of growth **O(n!)**: hugely demanding. i.e: 
+finding an exact solution to the traveling salesman problem through the blues fold search.
+Some methods are more variable than others. For example, when you consider sorting methods, the **insertion sort** is linear in its best day but quadratic averagely, when the **selection sort** is quadratic both in its best version, and averagely. 
 
+The most import thing is to be aware of the demands so we can get the answers needed in the right time.
+
+
+### Probability
+To answer to the question: what are the odds of something?
+The principles of probability:
+- They range from $0$ to $1$.
+- $P(A) = $ probability of the event $A$.
+- $P(S)$, the probability space is all the probabilities together and gives $1$.
+- The probability of the complement of $A$ is $P(\sim A) = 1 - P(A).$
+There are also conditional probabilities:
+- A conditional probability, probability of $A$ given $B$ $P(A|B) =$ Probability of $A$ if $B$ is true.
+- We meet them a lot in hypothesis testing with probabilities of Type I & II errors.
+Some arithmetic with probabilities:
+- **For adding probabilities:**
+$P(A \text{ or } B) = P(A) + P(B) - P(A ~\&~ B)$. Note that when the events $A$ and $B$, are disjoints, they never occur together, which means $P(A ~\&~ B) = 0$ and then $P(A \text{ or } B) = P(A) + P(B).$
+- **Multiplications for probabilities:**
+We want to get joint probabilities: the probability of two things occurring together simultaneously.
+$P(A ~\&~ B) = P(A) \times P(B|A)$ but if A and B are independent 
+$P(B|A) = P(B)$, and then $P(A ~\&~ B) = P(A) \times P(B).$
+
+---
+
+# Statistics in data science
 
 
 
