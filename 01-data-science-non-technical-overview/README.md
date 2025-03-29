@@ -568,6 +568,40 @@ It is about trying to use a little data (few numbers) to stand in for a lot of d
 
 ## Inference
 ### Hypothesis testing
+The idea is to start with a question: "what is the probability of $X$ by chance if randomness / meaningless sampling variation is the only explanation?" and the response is: "If probability of data arising by chance is low, then reject randomness as a likely explanation." It is really common in Scientific research , and can be very useful for medical diagnosis, or anytime we are trying to make a Go / no go decision.
+For hypothesis testing, you need to have:
+- a null hypothesis ($H_0$): no systematic effect between groups, and random sampling error is the only explanation.
+- an alternative hypothesis: systematic effect, correlation between variables.
+We have to decide whether to retain or reject the null hypothesis but things can go wrong:
+- false positive: when the sample shows some kind of statistical effect but it's randomness. That's conditional on rejecting the null. It's a Type I error. Most common value to reject the null hypothesis is $0.05$
+-  false negative: when the data looks random but it's systematic. It's conditional on retaining the null hypothesis and is called type II error. It needs to be calculated.
 
+The problem wit hypothesis testing s that it is really easy to misinterpret:
+- a statistical meaningful result is confound with the sample size. It doesn't mean it is something big or meaningful.
+- assumption of a null or nil effect: zero effect at all and in some situations it can be an absurd claim.
+- Bias from cutoff: anytime there is a cutoff, there are problem where there are cases slightly lower or higher.
+- some just try to answer the wrong question: instead of looking the probability to get the data at random.
+
+
+### Estimation
+It is designed to give a number, an estimate for a parameter we are trying to geth. The most common for it is confidence intervals. It is still an inferential procedure. But here we focus on likely values. It is useful to estimate any sample statistic. There are few versions: parametric vs. bootstrap methods: to randomly sample the data to get an idea of the variability, central vs. noncentral confidence intervals in estimation.
+
+We need to choose a confidence level between 0 and 1 exclusive. $95\%$ is the most common. It gives a range of numbers: high and low. The higher he level of confidence the wider the range will be.
+
+There is a trade off between accuracy (on target interval that contains the true population, leading to the correct inference) and precision (a narrow interval: a small range of likely values, independent of accuracy).
+![Illustration of precision and accuracy](images/accuracy_and_precision.png)
+No matter what you do, you should interpret confidence intervals. 
+Example:
+- Result: the $95\%$ confidence interval for the mean is $5.8$ to $7.2$.
+- Colloquial: there is $95\%$ chance that the population mean is between $5.8$ and $7.2$. But in frequentist statistical procedures, it implies that the population mean shifts and that's not how people see it.
+- Better: $95\%$ of confidence intervals for randomly selected samples will contain the population mean.
+
+Remember:
+Higher confidence levels create wider intervals. The moe certain you want to be, you are gonna give them a wider range. Larger standard deviations create wider intervals. If what you study is inherently variable, then your estimate of the range will be variable as well. Larger sample sizes create narrower intervals.
+
+Confidence intervals, most common version of estimation, focus on the population parameter, the variation of the data, being included in that estimation. They are more informative as they tell us wether the population value is likely but they give a sense of the data itself, which is why people argue they should be included in any statistical analysis.
+
+## Choices
+### Estimators
 
 ---
