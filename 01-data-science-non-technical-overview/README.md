@@ -603,5 +603,14 @@ Confidence intervals, most common version of estimation, focus on the population
 
 ## Choices
 ### Estimators
+That is different methods for estimating parameters.
+
+- **OLS**: Ordinary Least Squares is a very common method used in a lot of statistics and based on the sum of squared errors. It is characterized by BLUE (Best Linear Unbiased Estimator)
+
+- **ML**: Maximum likelihood: when you choose parameters that make the observed data most likely. It's based on a local search and so, does not always fnd the best match.
+
+- **MAP**: Maximum a posteriori is a Bayesian approach that add a prior distribution and goes through an anchoring and adjusting process. 
+
+
 
 ---
