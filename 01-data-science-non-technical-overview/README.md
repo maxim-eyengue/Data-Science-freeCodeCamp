@@ -615,4 +615,15 @@ Those three standards connect together. **OLS** is equivalent to **ML** wit norm
 
 The choice of method depends on your goals and what suits best to your data.
 
+
+### Measures of fit
+That is the correspondence between the data at hand and the  model created.
+
+- $R^2$: the squared multiple correlation or coefficient of determination. It compares the variance of the outcome variable to the residuals after making predictions. Scores range from $0$ to $1$ where $1$ is te perfect score. Its variation **Adjusted $R^2$** takes in consideration the number of variables.
+
+- $-2LL$: based on the likelihood ratio, or $-2 \log$ likelihood. It compares fit of nested models. It is used for binary outcomes in logistic regression and smaller scores are better. It has some variations including the $AIC$ (Akaike Information Criterion) and $BIC$ (Bayesian Information Criterion). Both adjust for the number of predictors to avoid over-fitting (when the model is tailored to specifically to the training data and does not generalize well.)
+
+- $\chi^2$: chi-square is used to evaluate the deviations between the observed dataset and the expected values in each category.
+
+Note that the choice affect the model (with or without penalization, quantitative or binary outcome) and depend on our goals.
 ---
