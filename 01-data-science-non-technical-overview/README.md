@@ -153,7 +153,7 @@ The Maths you need:
 - Probability Theory
 - Bayes' theorem
 
-### Satistics
+### Statistics
 It is an attempt to find patterns in an overwhelming mass, order in chaos.
 - We can explore data: exploratory graphics (it is easy to see things), exploratory stats (numerical exploration of the data), descriptive stats (stats in college)
 - Inference: take information from sample and infer something about a population. One common version is hypothesis testing, and another one is estimation (confidence intervals)...
@@ -603,14 +603,16 @@ Confidence intervals, most common version of estimation, focus on the population
 
 ## Choices
 ### Estimators
-That is different methods for estimating parameters.
+That is different methods for estimating parameters: 
 
 - **OLS**: Ordinary Least Squares is a very common method used in a lot of statistics and based on the sum of squared errors. It is characterized by BLUE (Best Linear Unbiased Estimator)
 
-- **ML**: Maximum likelihood: when you choose parameters that make the observed data most likely. It's based on a local search and so, does not always fnd the best match.
+- **ML**: Maximum likelihood: when you choose parameters that make the observed data most likely. It's based on a local search and so, does not always find the best match.
 
 - **MAP**: Maximum a posteriori is a Bayesian approach that add a prior distribution and goes through an anchoring and adjusting process. 
 
+Those three standards connect together. **OLS** is equivalent to **ML** wit normally distributed errors, and **ML** to **MAP** with a uniform prior distribution.
 
+The choice of method depends on your goals and what suits best to your data.
 
 ---
