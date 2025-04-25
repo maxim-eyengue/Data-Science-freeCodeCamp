@@ -626,4 +626,13 @@ That is the correspondence between the data at hand and the  model created.
 - $\chi^2$: chi-square is used to evaluate the deviations between the observed dataset and the expected values in each category.
 
 Note that the choice affect the model (with or without penalization, quantitative or binary outcome) and depend on our goals.
+
+### Feature selection
+The choice of variables to include into your model. It's important to select best features and get rid of uninformative variables, so to simplify the model and avoid over-fitting. One danger here is multicollinearity: when we have overlaps between the predictor and the outcome variables. There are few ways for dealing with the des-entanglement of the association between predictors, with some common (looking at probabilities values in regression equations, standardized coefficients and variations on sequential regression) and other newer (commonality analysis, dominance analysis, and relative importance weights).
+
+- P-values: check the star for each predictor. It's problematic because with a large sample anything can easily become statistically significant.
+- Betas: standardized regression coefficients when all variables are put on the same scale.
+
+
+
 ---
