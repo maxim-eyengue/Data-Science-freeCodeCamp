@@ -194,86 +194,132 @@ Putting the narrative in a notebook can help to explain yourself. R Markdown can
 
 ---
 
-# Data Sourcing
-No data no data science. This course is about different methods to obtain data for analyses.
+# 📊 Data Sourcing  
+No data → no data science! This course covers various methods to obtain data for analyses.  
 
-## Measurement
+## 🔍 Measurement  
 
-### Metrics
-Data science is action oriented. The goal should be explicit and clear for the client and can help the analysts save time. It helps define success:
-- commerce: sales, new customers
-- edu: scores on test, graduation rate
-- government: housing, jobs
-- research: ability to serve the people we are trying to understand.
-There are different metrics or ways of measuring:
-- Business metrics: sales revenue, leads generated or new customers, customer value, churn rate (loosing and gaining customers)
-- KPIs: a key performance indicator should be non-financial (measure the overall productivity), timely, ceo focus (senior management decide on them), simple, team-based, with significant impact (affecting more than one important outcome) and limited dark side (fewer possibility for reinforcing wrong behaviors).
-- SMART goals: Specific Measurable, Assignable, Realistic and Time-bounded.
-- Multiple goals: optimizing goals.
-Many metrics can be used to know how well the goals are reached. When there are many there is a need to optimize them. 
+### 🎯 Metrics  
+Data science is action-oriented. The goal should be explicit and clear for the client, helping analysts save time and define success:  
+- **Commerce**: sales, new customers 💰  
+- **Education**: test scores, graduation rate 🎓  
+- **Government**: housing, jobs 🏘️  
+- **Research**: ability to serve the people we study 🔬  
 
-### Accuracy
-We can get many different ways of measuring the accuracy from a classification table.
+There are different metrics or ways of measuring success:
+- **Business metrics**: sales revenue, leads generated, customer value, churn rate (losing/gaining customers)  
+- **KPIs**: Key Performance Indicators should be  
+  - Non-financial (overall productivity)  
+  - Timely ⏱️  
+  - CEO-focus (set by senior management)  
+  - Simple ✅  
+  - Team-based 👥  
+  - Significant impact (affecting multiple important outcomes)  
+  - Limited dark side (minimizing perverse incentives)  
+- **SMART goals**: Specific, Measurable, Assignable, Realistic, Time-bounded  
+- **Multiple goals**: optimizing trade-offs when many metrics matter  
+
+Many metrics help track goal attainment, but too many → need for optimization!
+
+### 📈 Accuracy  
+From a classification table, we derive accuracy metrics:
 
 ![Classification Table](images/classification_table.png)
 
-Some are:
-- sensitivity: or recall or true positive rate. If there is a fire, does the alarm ring? You want to always have an alarm when there is a fire.
-$sensitivity = tp / (tp + fn)$
-- specificity: if there isn't a fire, does the alarm stay quiet? You want the alarm to stay quiet when there is no fire.
-$ specificity = tn / (tn + fp)$
-- positive predictive value: or ppv or precision. If the alarm rings, is there a fire?
-$ppv = tp / (tp + fp)$
-- negative predictive value: if the alarm doesn't ring, is there no fire?
-$npv = tn / (tn + fn)$
-The idea is to maximize an accuracy as much as we can. We want to maximize true positives and true negatives and avoid te false ones. 
+- **Sensitivity (Recall, True Positive Rate):**  
+  If there's a fire, does the alarm ring? 🔥 You want to always have an alarm when there is a fire 🚨  
+  $$\text{sensitivity} = \frac{tp}{tp + fn}$$  
+- **Specificity:**  
+  If there's no fire, does the alarm stay quiet? 🤫 You want the alarm to stay quiet when there is no fire.   
+  $$\text{specificity} = \frac{tn}{tn + fp}$$  
+- **Positive Predictive Value (PPV, Precision):**  
+  If the alarm rings, is there a fire? 🚨❓  
+  $$\text{ppv} = \frac{tp}{tp + fp}$$  
+- **Negative Predictive Value:**  
+  If the alarm doesn't ring, is there no fire? 🤔  
+  $$\text{npv} = \frac{tn}{tn + fn}$$  
 
-### Social context of measurements
-People are people and that can affect measurements:
-- When making recommendations, it is important to respect the business model of the client organization (it's tied to their identity). 
-- Some laws and policies or common practices may limit the way goal can be met.
-- There is competition both between organizations as within.
-- People generally exploit and game the system.
-You should consider that to make the most out of your analysis.
+🎯 **Goal**: maximize true positives & true negatives, minimize false alarms & misses.
 
+### 🌐 Social Context of Measurements  
+People are people and that can impact measurements:  
+- When making recommendations, respect the client's business model (their identity) 🏢  
+- Laws, policies, common practices may limit how goals are met 📜  
+- Competition exists both between and within organizations 🏁  
+- People will game the system if they can 🎲  
 
-## Getting data
-
-### Use existing data
-There are any different types:
-- **In-house data**: proprietary data (from the organization or client company) can be fast and easy with hopefully appropriate format and good documentation, with good quality. There might be some restrictions.
-- **Open data**: public (government, corporate or scientific) data that is prepared and freely available. Some example are : [US data](https://data.gov/), [Utah data](https://www.utah.gov/index.html), [EU data](https://data.europa.eu/en), [UN data](https://data.unicef.org/), [WHO data](https://www.who.int/data), [Pew Research Center data](https://www.pewresearch.org/datasets/), the [New York Times APIs](https://developer.nytimes.com/), [Google available data](https://datacommons.org/data/agriculture), [AWS Pubic datasets](https://aws.amazon.com/opendata).
-Note that those datasets can be very valuable, well-formatted and documented, and also various. However, sometimes they require sharing analyses which is a concern when doing proprietary research. There might be biased samples because of Internet needs, or issue with privacy and confidentiality. The data meaning might also be unclear.
-- **Third-party data**: purchased data (DaaS: Data as a service, or Data brokers) can give enormous data on many different topics, even processing data for us. Here are some data brokers: [Acxiom](https://www.acxiom.com/) primarily for marketing data, [Nielsen](https://www.nielsen.com/) primarily for media consumption and [datasift](https://www.datasift.com.tr/). Using data brokers can save time and effort, giving individual level data, and specific information. However, it can be expensive, still require a double-check, and people don't like using this option.
-
-Always pay attention to the quality, the meaning and the usability of the data.
+⚠️ Always account for human behavior to get the most out of your analysis!
 
 
-### Use APIs
-Application Programming Interfaces allow programs to talk to each other. It allows your program to get web data. The most common version is called **REST API** standing for Representational State Transferred . It allows to access data on web page via *HTTP* (HyperTest Transfer Protocol). The data is downloaded in *JSON* (Javascript Object Notation) format, and can be sent directly to other programs using any programming language (as they are language agnostic).
-There are **social APIs** for: Facebook, Twitter, Google Chat, FourSquare, Soundcloud; **visual APIs**: Google Maps, YouTube, AccuWeather, Pinterst, Flickr.
-We can program APIs in **R**, **Python**, **Bash**, etc.
+## 🛠️ Getting Data 
 
-### Scraping data
-Scraping data is pulling information from web pages. We use this technique when there is no immediate way to get the data we can see. From that we can scrape html text, or tables, pdf, and media. Always pay attention to copyright and privacy. There many ways to do web scraping:
-- use apps: import.io, ScraperWiki, Tabula, Google Sheets, Excel.
-- code your scraper with: R, Python, Bash, Java or PHP.
-You are gonna be looking for information in web pages. If looking for **HTML Text**, you will pull structured text from web pages, using HTML tags like <*body*> <*h1*> or <*p*>. For **HTML tables**, you will use HTML table tags like like <*table*> <*tr*> or <*td*> but you need the table number that you mind find after trials and errors. You  can also scrape data from **pdf** (native: text pdf, or scanned: image pdf) by looking for text elements, dealing with raster/vector images and also with tabular data using special programs like Tabula or ScraperWiki. Finally we can scrape **media** like images, video or audio. To read the data, we might need a program looking pixel by pixel in each image.
+### 📂 Use Existing Data  
+Different sources:  
+- **In-house data**: proprietary, fast, well-documented, high quality data but that may have restrictions  
+- **Open data**: public (government, corporate, scientific) prepared and freely available data, e.g.:  
+  - [US data](https://data.gov/)  
+  - [Utah data](https://www.utah.gov/index.html)  
+  - [EU data](https://data.europa.eu/en)  
+  - [UN data](https://data.unicef.org/)  
+  - [WHO data](https://www.who.int/data)  
+  - [Pew Research Center](https://www.pewresearch.org/datasets/)  
+  - [NYT APIs](https://developer.nytimes.com/)  
+  - [Google Data Commons](https://datacommons.org/data/agriculture)  
+  - [AWS Open Data](https://aws.amazon.com/opendata)  
+They have some *Pros*: well-formatted, documented, varied, and *Cons*: sharing requirements, biased samples (internet access), privacy concerns, unclear definitions  
+- **Third-party data** (DaaS: Data as a Service, data brokers):  
+  - [Acxiom](https://www.acxiom.com/) (marketing)  
+  - [Nielsen](https://www.nielsen.com/) (media)  
+  - [Datasift](https://www.datasift.com.tr/)  
+  They have their *Pros*: huge, processed, granular and *Cons*: cost, still needs validation, can be unpopular  
+
+🔍 Always assess quality, meaning, and usability!
 
 
-### Making data
-Can't find the data you need? DIY
-Depending on your role to get the data (passive or active), the type of data you want (quantitative or qualitative) and how you want to et it (online or in person), there are some options:
-- **interviews**: a conversation used for the most basic problem. When you are working with a new topic, a new audience, or you need to find ways to improve. You don't want to constraint responses. Interviews can be structured with predetermined questions or unstructured. They require time and training, and answers eed to be analyzed.
-- **surveys**:  if you want to know something, just ask. Here you need to know enough the topic and the audience to anticipate the answers. You can have a *closed ended* surveys with forced choices, *open ended* ones, *in person* or *online*. Common applications for online surveys are **SurveyMonkey**, **Qualtrics**, **Google Forms** and **Typeform**. Note that when surveys are easy to set up, questions can be ambiguous, and response scales confusing.
-- **card sorting**: important in web research. To do so, you write topics on cards, physically or digitally and ask people to sort those cards so that you can compute dissimilarity data (distance between topics). There are *generative* card sorting tasks where each respondent create their own sets, used to design websites, and *evaluative* where there is a fixed number of categories, used to check if the navigation is intuitive. You end up with a **dendogram**: hierarchical visualization.
-![Dendrogram](images/dendrogram.png)
-For digital card sorting, you can use Optimal Workshop, UserZoom or UXSuite.
-- **Experiments**: *laboratory* where you design the situation, *A/B testing* an automated online testing of two or more variations. Lab experiments helps to determine better **cause and effects**. Here researchers can play an active role with manipulation. Experiments are focused research, hypothesis driven with random assignment to minimize of confounds and artifacts.
-A/B testing : you create a multiple versions, randomly assign version to visitors, compare response rates (time on page, mouse tracking, clicks-through, shopping cart value, abandonment), and implement the best variation.  A/B testing can be performed continuously. There are some softwares to do it: **Optimizely**, **VWO**, etc.
+### 💻 Use APIs  
+Application Programming Interfaces let programs talk to each other, which is ideal for getting web data.  
+- **REST API** (Representational State Transfer): the most common version allows to access data on web page via *HTTP* (HyperTest Transfer Protocol)  
+- The data is downloaded in *JSON* (Javascript Object Notation) format, and can be sent directly to other programs using any programming language (as that format is language agnostic)
+- Common social APIs for: Facebook, Twitter, Google Chat, FourSquare, SoundCloud  
+- Visual APIs for: Google Maps, YouTube, AccuWeather, Pinterest, Flickr  
+- You can program API calls in R, Python, Bash, etc.
 
-## Conclusion
-See what you already have, exploring some open data sources. Consider making new data if they don't give you what you need.
+### 🕸️ Scraping Data  
+Scraping = pulling information from web pages. It is especially used in cases where no API exists.  
+- **What you can scrape**: HTML text, tables, PDFs, media  
+- **Tools**: import.io, ScraperWiki, Tabula, Google Sheets, Excel  
+- **Code**: R, Python, Bash, Java, PHP  
+- **HTML Text**: use tags like `<body>`, `<h1>`, `<p>`  
+- **HTML Tables**: `<table>`, `<tr>`, `<td>` (often trial & error to find the right table index)  
+- **PDF**:  
+  - *Native text PDFs*: extract text elements  
+  - *Scanned image PDFs*: OCR (Optical Character Recognition), raster/vector handling, Tabula for tables  
+- **Media**: images, videos, audio. It may require pixel-level parsing  
+
+⚠️ Always mind copyright & privacy!
+
+
+### 🛠️ Making Data (DIY)  
+Can't find the data you need? Do It Yourself!
+Depending on your role to get the data (passive vs. active), the type of data you want (quantitative vs, qualitative) and how you want to get it (online vs. in person), there are some options:
+- **Interviews**: open or structured conversations great for new topics/audiences or to find ways to improve. Here, you don't want to constrain responses Interviews need time & training, and analysis are required for responses 🗣️ 
+- **Surveys**:  if you want to know something, just ask. Here you need to know enough about the topic and the audience to anticipate the answers. You can have a *closed ended* surveys with forced choices vs. *open ended* ones, *in person* vs. *online*. Common applications for online surveys are **SurveyMonkey**, **Qualtrics**, **Google Forms** and **Typeform**. Note that when surveys are easy to set up, questions can be ambiguous, and response scales confusing 📝   
+- **Card Sorting**: important in web/UX research. To do so, you write topics on cards, physically or digitally and ask people to sort those cards so that you can compute dissimilarity data (distance between topics). There are different type fo card sorting tasks: 
+  - *Generative*: users create categories. It is used to design websites  
+  - *Evaluative*: fixed categories. It is used to check if the navigation is intuitive.
+The result is a **dendrogram** (hierarchical visualization tree)  
+  ![Dendrogram](images/dendrogram.png)  
+For digital card sorting, you can use Optimal Workshop, UserZoom or UXSuite.  
+- **Experiments**:  
+  - *Laboratory experiments*: controlled, hypothesis-driven, manipulation, random assignment (to minimize confounds and artifacts) → causal insights 🔬 Here researchers can play an active role with manipulation by designing the situation   
+  - *A/B testing*: an automated online testing of two or more variants with random assignment of versions to users to compare metrics (time on page, mouse tracking, clicks, sales) and implement the best variation. Tools include Optimizely, VWO 🔄  
+
+## 📝 Conclusion  
+1. **Inventory** what you already have (in-house, open sources)  
+2. **Explore** public/open data if needed  
+3. **DIY** interviews, surveys, experiments only if necessary.
+
+Happy data hunting! 🎉
 
 ---
 
