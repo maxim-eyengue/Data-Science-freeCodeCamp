@@ -1,150 +1,118 @@
-# [Learn Data Science Tutorial - Full Course for Beginners](https://www.youtube.com/watch?v=ua-CiDNNj30&list=PLWKjhJtqVAblQe2CCWqV4Zy3LY01Z8aF1&index=1&t=1416s)
+## 📚 [Learn Data Science Tutorial – Full Course for Beginners](https://www.youtube.com/watch?v=ua-CiDNNj30&list=PLWKjhJtqVAblQe2CCWqV4Zy3LY01Z8aF1&index=1&t=1416s)
 
-From Barton Poulson
+**From Barton Poulson**
 
-# Introduction to data science
+---
 
-People usually see data as a too techy discipline with maths and labs but it is much more a creative discipline: you use tools from coding, stats & maths to work creatively with data in order to find a way to solve problems, and get insights from data. For that, you try to listen to almost all your data as **everything signifies**.
+# Introduction to Data Science ✨
+Data science isn't just a techy discipline with math and labs. It's a **creative** pursuit, combining coding, stats, maths, and domain expertise to **solve problems** and **extract insights**. Listen to your data closely, because **everything signifies**.
 
-This course gives a map of data science and how we can use it.
+This course 🚀 gives you a roadmap for using data science effectively.
 
-## Definition of data science
-It is coding, maths & statistics in applied settings or the analysis of diverse data or inclusive analysis. 
+## 📖 Definition of Data Science
+> Data science is applied coding, math & statistics; it is the art of analyzing diverse data with creativity and rigor.
 
-### The data science Venn diagram
-According to Drew Conway, data science is a combination of coding (computer programming, hacking), stats & maths (quantitative abilities) and domain expertise (intimate familiarity with a particular fields).
-![The ingredients of data science](images/ds_ingredients.png)
+### 🎯 The Data Science Venn Diagram
+According to Drew Conway, data science lives at the intersection of coding (computer programming, hacking), stats & maths (quantitative abilities) and domain expertise (intimate familiarity with a particular field):
 
-- Coding: 
-It helps gather and prepare data coming from different sources. Note that it can require real creativity. There is statistical coding (R & Python), database manipulation (SQL), the command line interface (bash), and also search (regex: regular expression).
+1. **Coding**: Creatively gathering & prepping data from various sources: statistical coding (R & Python), database manipulation (SQL), command line interface (bash), and search (regex: regular expression) 🖥️
 
-- Math:
-Probability, algebra, regression, etc. helps to choose the procedures to manage data and diagnose problems encountered when manipulating them.
+2. **Math & Statistics**: Probability, algebra, regression, etc. to choose appropriate methods for handling data & to diagnose issues. 📊
 
-- Domain Expertise:
-goals, methods used, and constraints of the field in order to implement them well.
+3. **Domain Expertise**: Deep knowledge of the field's goals, methods & constraints. 💡
 
-Note that the combination of these three can lead to other inner-circles: ML, Traditional research and the danger zone.
+<small>*Inner-circles emerge from combining two of these ingredients:* ML, Traditional Research, and the Danger Zone.*</small>
 ![Some other fields](images/ds_inner_circles.png)
 
-- ML: coding and math without any domain expertise. It doesn't involve applications.
-- Traditional research: math or stats and domain knowledge without programming. The data here is already structured and ready for analysis. We just need to choose method and interpret results.
-- Danger zone: coding & domain knowledge without maths can be used for drawing maps and counting words.
+#### 🔄 Inner-Circles Explained
+- **ML**: Coding + Math, but no domain expertise. Pure algorithms 🤖
+- **Traditional Research**: Math/Stats + Domain, but no coding. Data is already structured and ready for analyses 📑
+- **Danger Zone**: Coding + Domain, but no math. Risky for valid inferences⚠️ but can be used for drawing maps and counting words.
 
+### 🛤️ The Data Science Pathway
+1. **Planning**: Define goals, resources, schedule & success criteria 🗺️
+2. **Data Prep**: 🎯 Collect, clean, explore & refine your data (add variables, filter cases).
+3. **Statistical Modeling**: Build, validate, evaluate & refine models 🔍
+4. **Follow-up**: Present to stakeholders, deploy (e.g., on a website), monitor (as data might change over time) & document for reproducibility 📈
 
-### The data science pathway
-The steps are the following :
-- planning: define the project goals to know how to us the resources and when the goal has been reaches, organize those resources and coordinate people, schedule the project.
-
-- data prep: get the data and clean it, explore the data to find out more about it, refine the data (adding variables, including or excluding cases)
-
-- statistical modeling: create and validate the model, evaluate it, and refine (adding or throwing variable)
-
-- follow-up: present the model to clients, deploy the model to a website for example, revisit the model as data might change with time, and archive the assets and document everything so that the analysis can be reproduced.
-
-### Roles in data science
+### 🤝 Roles in data science
 Data science is a collaborative thing where people work together to achieve a goal.
 
-- Engineers: such as developers or database admin, who focus on back end hardware, and the software running them. They provide the foundation for the rest of the work.
+- **Engineers**: Backend, hardware, software foundation 🛠️
+- **Big Data Specialists**: CS + math, build ML-driven data products 🌐
+- **Researchers**: Domain-focused and good statisticians 🔬
+- **Analysts**: Day-to-day tasks like SQL queries and web analytics 📊
+- **Business People**: Frame questions, manage projects & "speak data" 💼
+- **Entrepreneurs**: Build data startups using both data & business skills 🚀
+- **Full-Stack "Unicorn"**: Expert in everything… still mythical! 🦄
 
-- Big data specialists: focus on computer science and maths, creating data products using machine learning.
+<u>**NB:**</u>
+The unicorn is a mythical creature with magical abilities. In data science it is a mythical data scientist with universal abilities. No unicorns (*yet*), just people. Hence, there is a need to build teams to deliver data science projects. To build a good team, we take people with different skills so that together they can form a kind of unicorn: a <b>unicorn by team</b>.
 
-- Researchers: focus on domain specific research such as physics, genetics, precision medicine, healthcare. They are very good statistician.
-
-- Analysts: focus on daily tasks such as web analytics or pulling data from sql. This is good for business in general.
-
-- Business people: frame relevant questions that can be answered with data. They manage projects and must be able to "speak data".
-
-- Entrepreneur: creating data startups, they need data & business skills using creative throughout.
-
-- **Full-stack "unicorn"**: can do everything at an expert level.
-
-
-### Teams in data science
-The unicorn is a mythical creature with magical abilities. In data science it is a mythical data scientist with universal abilities. No unicorns (*not yet*), just people. Hence, there is a need to build teams to deliver data science projects. To build a good team, we take people wit different skills so that together they can form a kind of unicorn: a **unicorn by team**.
-
-## Contrasts
-
-### Big data
-Big data and Data science both have a venn diagram. They are similar but not the same. Big data combine **volume** (big quantity of the data), **velocity** (the high speed with which this data is generated) and **variety** (data in different formats).
-
-- Big data without data science: big data without all v's. Think of machine learning without domain expertise, or world counts. Note that we need coding and quantitative skills.
-
-- Data science without big data: Data with just one v. For example, genetics data may not count as big  data as the data can be taken once even though in huge quantity. Streaming sensor data allows to get data very quickly and we can just visualize it without storing that. Facial recognition may not count as big data too.
-
-Big data can be combined with data science to get **big data science**. To handle this, there is a need to get the full skill-set of data science.
+## 🔍 Contrasts & Contexts
+### 💾 Big Data vs. Data Science
+- **Big Data's 3 Vs**: Volume (big quantity of data), Velocity (high speed with which data is generated) & Variety (data in different formats).
+- **Big Data without Data Science**: Big data without all 3 V's or Raw scale without domain-driven insights 📉
+- **Data Science without Big Data**: Data with just one V's. Traditional datasets (e.g., genetics) can still benefit from Data Science methods 🔬
+- **Big Data Science**: Combining both for maximum impact.
 
 
-### Coding
-It is just giving task instructions to computers. It is like a recipe provided to a machine so that its outputs a result in function of an input. To accomplish simple tasks like counting words, adding the data part is enough but to make valid inferences and generalizations, there is a need of statistics and by extension of data science. Note hat top data science tools include things that are not programming languages such as Excel.
+### 👩‍💻 Coding
+Coding is like a recipe for computers: input ➡️ instructions ➡️ output. Essential for data wrangling, but **statistics** is needed for valid inferences 🍳
+
+> Top Data Science tools aren't only languages: think Excel, Tableau, SPSS, JASP, etc.
 
 ![Top data science tools](images/ds_tools.png)
 
+### 📈 Statistics
+When it comes to Data Science, we cannot think of Statistics as a NOMA (Non-Overlapping Magisteria). Indeed, Statistics is part of Data Science, but most data scientists aren't pure statisticians. ML & Big Data often live in separate ecosystems. Finally, DS practitioners apply stats to build commercial products 💡
+Both fields analyze data but people in each tend to have different backgrounds and function with different goals & contexts.
 
-### Statistics
-When it comes to Data Science, we cannot think of Statistics as a NOMA (Non-Overlapping Magisteria). Indeed, Statistics is a part of data science. However, most data scientists are not trained as statisticians. In practice, ML & Big data are not shared generally with Statistics. They have separate domains. Finally data scientists generally very often work in commercial settings to develop products that make money. Both fields analyze data but people in each tend to have different backgrounds and function with different goals & contexts.
+### 📊 Business Intelligence (BI)
+BI is data in real life. It is very very applied stuff. Its purpose is to get data on internal operations, market and competitors and make justifiable decisions. Data science is involved with this but BI does not include coding and its statistics are very simple (count, percentages, ratios). The focus here is on domain expertise and on really useful direct utility. One of the main associations is **dashboards** (collections of charts and tables to give a very quick overview of what is going on in the business).
+When BI focuses on simple metrics (counts, ratios) and dashboards to inform decisions, Data Science can design the analytical framework behind BI, elevating it beyond simple reporting 📉➡️📈  
 
+## ⚖️ Ethical Issues
+1. **Privacy**: Never share confidential info without permission 🔒
+2. **Anonymity**: Re-identification is easy, safeguard identities 🕵️‍♂️
+3. **Copyright**: Scraping data may violate IP rights 📜
+4. **Data Security**: Protect against hackers and breaches 🛡️
+5. **Bias**: Guard against gender, race & other biases in rules & data ⚖️
+6. **Overconfidence**: Models only simplify. Human interpretation remains crucial 🤔
 
-### Business Intelligence
-BI is data in real life. It is very very applied stuff. Its purpose is to get data on internal operations, market and competitors and make justifiable decisions. Data science is involved with this but BI does not include coding and its statistics are very simple (count, percentages, ratios). The focus here is on domain expertise and on really useful direct utility. One of the main associations is **dashboards** (collections of charts and tables that go together to give a very quick overview of what is going on in the business).
-Data science can be useful to set up the framework for a BI system or for dashboards. It can help past easy questions and easy data to get the questions that are most useful even if they require data hard to wrangle. DS can learn design from good BI. 
+> Please, **Do no harm** with your projects. 
 
+## 🔧 Methods & Workflow  
+DS >>> Tech: Technology simply give means to do data science, the real goal being insights.
+- Sourcing: How to get data.
+- Coding: Computer programming to obtain, manipulate and analyze data.
+- Maths: Mathematics behind the Data Science methods.
+- Stats: statistical methods to summarize and analyze data.
+- ML: Methods for finding clusters, predicting categories and scores.  
 
-## Ethical Issues
-Please, **Do no harm** with your projects.
+### 1. Sourcing
+- **Existing Data**: In-house (from a company), open-source (from governments or organizations), third-party (from a specific vendor) 🌍
+- **APIs**: Direct programmatic access to web data via Data Application Programming Interfaces 🔗
+- **Web Scraping**: HTML, PDFs via R/Python or specialized apps 🕸️
+- **Primary Data**: Getting exactly what you need via surveys, interviews or experiments 📝
 
-### Privacy
-You shouldn't share confidential information from people (name, addresses, health, social security numbers, etc.) except if they give you permission for that. A lot of data used for data science was not created for sharing. Think of web scraping of pdf... Make sure you have the right to, if you want to share data.
+> **GIGO**: Garbage In, Garbage Out -> quality data = quality insights.
 
-### Anonymity
-It is not hard to identify people in data. Before, **HIPAA**, the Health Insurance Portability ad Accountability Act, it was very easy to identify people from medical records.  Proprietary data may have identifiers. We should still maintain privacy and confidentiality of the data.
+### 2. Coding
+It is any technology allowing to manipulate data in the way you need to perform the procedure you need, to get the insights you want out of the data. There are threes categories:
+- **Apps**: specialized for working with data. There are Spreadsheets fundamental data tool, Tableau for data visualization, SPSS statistical package, JASP free open source version of SPSS.
+- **Data Formats**: special formats for web data such as HTML, XML, JSON, etc.
+- **Code**: programming languages such as R, Python for general purpose, SQL for databases, C/C++ & Java used more in the back-end of data science, bash and regex.
 
-### Copyright
-Scraping data (from webpages, pdf, images, audio, etc.) is common and useful but it is not always okay to use data just because it is on the Internet.
+> Note that tools are just means, use them wisely. A few tools are enough, you should just focus on your goal, choosing the right tools to match it.
 
-### Data security
-We should be concerned about hackers trying to steal the data especially if it is not anonymous. The data should be safe.
-
-### Potential Bias
-If the rules & data used are biased (gender, race, ...), algorithms might replicate those biases.
-
-### Overconfidence
-Analyses are limited simplifications and there is a need of humans to help interpret them. Humility is in honor when doing data science work.
-
-
-## Methods
-Tech is simply the means to do data science, the goal being insights.
-- Sourcing: How to get the data.
-- Coding: Computer programming to obtain, manipulate and analyze the data.
-- Maths: math behind the DS methods.
-- Stats: statistical methods to summarize and analyze the data.
-- ML: Methods for finding clusters, predicting categories and scores.
-DS >>> Tech
-
-
-### Sourcing
-You have some options to get raw data:
-- Existing data: in-house data from a company, open source data from governments or organizations, third-party data bought from a specific vendor.
-- Data APIs: an Application Programming Interface allows applications to communicate directly with each other. It helps to import web data directly from the program we are using to treat data.
-- Scrape Web data: For web data without APIs such as HTML, PDFs, we can use specialized apps or code with programming languages like R or Python.
-- Make data: it helps to get exactly what we need maybe by interviews, surveys, or experiments.
-No matter the method, we need to remember **GIGO**: *Garbage in, garbage out*. Bad data won't provide real insights. As a consequence, we need to pay attention to metrics Business metrics, KPIs (key performance indicators), SMART goals and classification accuracy. 
-
-### Coding
-It is any technology allowing to manipulate data in the way you need to perform the procedure you need to get the insights you want out of the data. There are threes categories:
-- apps: specialized for working with data. There are Spreadsheets fundamental data tool, Tableau for data visualization, SPSS statistical package, JASP free open source version of SPSS.
-- data: special formats for web data such as html, xml, json, etc.
-- code: programming languages such as R, Python for general purpose, SQL for databases, C, C++ & Java used more in the back-end of data science, bash and regex.
-
-Note that tools are just means, use them wisely. A few tools are enough, you should just focus on your goal, choosing the tools to match it.
-
-### Maths
+### 3. Math
 It is important because:
 - you need to know which procedures to use and why
 - you need to know what to do when things don't work right
 - some math is easier by hand than computer
-Math is to data science what chemistry is to cooking, kinesiology to dancing, or grammar to writing. You can be a wonderful cook without  know chemistry ut knowing some will definitely help.
-The Maths you need:
+Math is to data science what chemistry is to cooking, kinesiology to dancing, or grammar to writing. You can be a wonderful cook without knowing chemistry but knowing some will definitely help 🍳🔬
+The Maths you'll need:
 - Elementary Algebra
 - Linear (matrix) Algebra
 - Systems of linear equations
@@ -153,58 +121,65 @@ The Maths you need:
 - Probability Theory
 - Bayes' theorem
 
-### Statistics
+### 4. Statistics
 It is an attempt to find patterns in an overwhelming mass, order in chaos.
 - We can explore data: exploratory graphics (it is easy to see things), exploratory stats (numerical exploration of the data), descriptive stats (stats in college)
-- Inference: take information from sample and infer something about a population. One common version is hypothesis testing, and another one is estimation (confidence intervals)...
-- we have to be concerned by details and arranging things by ourselves: feature selection, problems, validation to make sure the model is correct, choice of estimators (coefficients of the model), and how well the model fits the data.
-Beware the trolls: you don't have to listen to people who think only their way is right. Remember George Box said: **all models are wrong, but some are useful**. The question is to know f you have done something that is useful.
-Wave your DIY (Do It Yourself) flag.
+- Inference: take information from sample and infer something about a population. One common version is hypothesis testing, and another one is estimation (confidence intervals, etc.)
+- Validation: Feature selection, estimator choice & model fit.
+Beware the trolls: you don't have to listen to people who think only their way is right.
+
+> "All models are wrong, but some are useful." - George Box
+
+The question is to know if you have done something that is useful. Wave your DIY (Do It Yourself) flag.
 
 
-### Machine Learning
-Intersection between coding & stats. It can be used to categorize and predict information from data:
-- work in a **data space** to reduce te dimensionality, and then use clustering or K-Means methods, and find anomalies or unusual cases in the data space.
-- work with **categories** with algorithms such as logistic regression, kNN, Naive Bayes, Decision Trees, SVM or artificial neural nets, to find patterns in the data to get similar cases next to each other.
-- **predictions**: linear regression, poisson regression for modeling count or frequency data, ensemble models putting together predictions from many simpler models.
+### 5. Machine Learning
+It is the intersection between coding & stats, that can be used to categorize and predict information from data:
+- Work in a **data space** to reduce the dimensionality, and then use clustering or K-Means methods, and find anomalies or unusual cases in the data space.
+- Work with **categories** with algorithms such as logistic regression, kNN, Naive Bayes, Decision Trees, SVM or artificial neural nets, to find patterns in the data to get similar cases next to each other.
+- **Predictions**: linear regression, poisson regression for modeling count or frequency data, ensemble models putting together predictions from many simpler models.
 
 
-## Communicating
+## 📣 Communicating Insights
 
-### Interpretability
+### 🔍 Interpretability
 You want to tell a data driven story. When doing the analysis, we are trying to solve for **value**: $Analysis \times Max(Story) = Max(Value)$. Analysis is goal-driven. The explanation or story given about the project should match those goals. Answer clients questions clearly and unambiguously.
 Remember the client isn't you, and think of:
 - Egocentrism: They don't see, know or understand things the same way you do. 
 - False consensus: ideas that everybody knows something.
 - Anchoring: initial impressions matter a lot. Watch out.
 - Clarity at each step.
-Think of the **answers**: state the question, answer it, qualify as needed and go in order but don't spend too much time on discussing the process technically. 
-The process is to remember that *analysis* means simplifying. According to Einstein: **everything should be made as simple as possible but not simpler**. Think of the minimum viable analysis:
-- more charts, less text
-- simplify charts
-- avoid tables (they are hard to read)
-- less text (again).
-In 1973, graduate school admissions revealed that the male admission rate was higher than the female one: $44\%$ against $35\%$. It seems to a lawsuit. However after breaking the application down by programs, it was found that there are some programs were women were accepted in a higher rate and some they were not. In Statistics, this is known as **Simpson's Paradox**. The paradox is that bias might be negligible at department level but still there might be some bias there in favor of women. The problem is women applied to more selective programs. There are many other questions that can still be answered and things we can look for as admission criteria, promotional strategies, prior education and funding levels. 
+Tell a **data-driven story**: state the question, answer it, qualify as needed and go in order but don't spend too much time on discussing the process technically. 
+The process is to remember that *analysis* means simplifying. 
+
+> Keep it simple: "Make everything as simple as possible, but not simpler." - Einstein
+
+Think of the minimum viable analysis: more charts, less text, simplified charts, if possible no tables (they are hard to read), less text (again).
+
+In 1973, graduate school admissions revealed that the male admission rate was higher than the female one: $44\%$ against $35\%$. It ended into a lawsuit. However after breaking the application down by programs, it was found that there are some programs where women were accepted in a higher rate and some they were not. In Statistics, this is known as **Simpson's Paradox**. The paradox is that bias might be negligible at department level but still there might be some bias there in favor of women. The problem is women applied to more selective programs. There are many other questions that can still be answered and things we can look for as admission criteria, promotional strategies, prior education and funding levels. 
 In sum, stories give value to data analysis and should be told in a clear way, minimally sufficient.
 
 
-### Actionable insights
-Those are information that can be used productively to accomplish something. William James idea: **My thinking is first and last and always for the sake of my doing** applies to analysis. When doing an analysis, point the way (analysis guide action). You should be able to tell the clients what are the next steps (what they need to do now), justifying those recommendations with data. You should be specific and make sure they are able to do them sep by step. 
-The problem here is the difference between **correlation** and **causation**. Data ives correlation (this is associated with that), but the client wants causation (this causes that). There are few ways to get that:
-- Experimental studies: randomized controlled trials
-- Quasi-experiments: methods that use non-randomized data for causal inference
-- Theory & experience: research based theory and domain-specific experience
+### 🎯 Actionable Insights
+Those are information that can be used productively to accomplish something.
+> "My thinking is first and last and always for the sake of my doing" - William James
+This thought applies to analysis. When performing an analysis, point the way (analysis guide action). You should be able to tell the clients what are the next steps (what they need to do now), justifying those recommendations with data. You should be specific and make sure they are able to do them step by step. 
+The problem here is the difference between **correlation** and **causation**. Data gives correlation (this is associated with that), but the client wants causation (this causes that). There are few ways to get that:
+- **Experimental studies**: randomized controlled trials.
+- **Quasi-experiments**: methods that use non-randomized data for causal inference.
+- **Theory & Experience**: research based theory and domain-specific experience
 There are also social factors affecting the data.
 ![Data & Social](./images/ds_social.png)
-We should make sure our recommendation follow: the client's mission (what he does), identity (who he is), its business context (competitive environment) ut also the social context (outside and inside the company).
+We should make sure our recommendations follow: the client's mission (what he does), identity (who he is), its business context (competitive environment) and also the social context (outside and inside the company).  4
 
-### Presentation graphics
+### 📊 Presentation Graphics
 Trying to paint a picture for the benefits of the client:
-- Exploratory graphics: speed and responsiveness, for our insights.
-- Presentation graphics: clarity & narrative flow. Avoid too much colors, 3D, interaction and animation as the client should not be distracted.
+- **Exploratory**: speed and responsiveness, for our insights.
+- **Presentation**: clarity & narrative flow. Avoid too much colors, 3D, interaction and animation as the client should not be distracted.
 
-### Reproducible research
-Data science projects tend to be incremental, cumulative and adaptive. So, **show your work**. You may need to revise your research later, or borrow something from previous studies, hand off to someone else, and also about accountability to show you did things in a responsive way. 
+
+## 🔄 Reproducible Research
+Data science projects tend to be incremental, cumulative and adaptive. So, **show your work**. You may need to revise your research later, or borrow something from previous studies, hand off to someone else, and also for accountability to show you did things in a responsive way. 
 There is a platform called the [open data science conference](https://odsc.com/) devoted to open data science using open data and making methods transparent. The [open science framework](https://osf.io/) is a way of sharing data and research with annotations of how to get to the results. The [association for psychological science](https://www.psychologicalscience.org/) strongly encourages people to share their data as much as possible and their methods to conduct studies.
 It is important to archive your data: both the totally raw and the processed, all code to process and analyze data, making sure to comment liberally and explain yourself (why you did the way you did, include choices and consequences, backtracking).
 This helps to future roof you work. Some useful principles:
@@ -215,8 +190,7 @@ Putting the narrative in a notebook can help to explain yourself. R Markdown can
 
 
 ## Conclusion
-
-Remember it is important to give people next steps. You can start doing some coding, visualization or learn some stats & maths or even ML. But try to keep wha you do in context. You can also get involved in a=one community of data science like O'Reilly Strata, Predictive Analysis World, Tapestry Conference, Extract by import.io. To start working a great choice is [kaggle](https://www.kaggle.com/). Once done, you might want to do some service: [DataKind](https://www.datakind.org/) is the premiere organization for data science as humanitarian service. Only remember that: data science is democratic. DATA SCIENCE NEED YOU!
+ You can start doing some coding, visualization or learn some stats & maths or even ML. But try to keep what you do in context. You can also get involved in a community of data science like O'Reilly Strata, Predictive Analysis World, Tapestry Conference, Extract by import.io. To start working a great choice is [kaggle](https://www.kaggle.com/). Once done, you might want to do some service: [DataKind](https://www.datakind.org/) is the premiere organization for data science as humanitarian service. Only remember that: data science is democratic. **Data Science needs YOU!** 💪🧠
 
 ---
 
