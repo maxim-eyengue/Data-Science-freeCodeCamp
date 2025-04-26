@@ -631,8 +631,27 @@ Note that the choice affect the model (with or without penalization, quantitativ
 The choice of variables to include into your model. It's important to select best features and get rid of uninformative variables, so to simplify the model and avoid over-fitting. One danger here is multicollinearity: when we have overlaps between the predictor and the outcome variables. There are few ways for dealing with the des-entanglement of the association between predictors, with some common (looking at probabilities values in regression equations, standardized coefficients and variations on sequential regression) and other newer (commonality analysis, dominance analysis, and relative importance weights).
 
 - P-values: check the star for each predictor. It's problematic because with a large sample anything can easily become statistically significant.
-- Betas: standardized regression coefficients when all variables are put on the same scale.
+- Betas: standardized regression coefficients when all variables are put on the same scale. The trick is we can't separate them as the coefficient is only valid when predictors are taken together as a whole. 
+- Sequence: With stepwise procedure we can handle the issue with betas. There are sequential regressions where variables are entered in blocks, and we examine change in fit at each step. However, this increases the risk of over-fitting.
 
+- Commonality analysis: provides separate estimates for unique and shared contributions of each variable. The problem form des-entanglement is moved to analysis. 
+- Dominance analysis: compares every possible set of predictors. But there is a lot of combinations when the number of variables increases.
+- Relative importance weights: create sets of predictors uncorrelated with each-other and predict outcomes without multicollinearity, and then back-transform (rescale the coefficients back to the original variables).
 
+It is important to choose the most useful variables in our model so to make it simpler, and reduce the noise in data.
+
+### Model validation
+ The model fits the sample data but will it work well with other data: is it scalable? Few ways to get generalizability:
+
+- **Bayes**: to get Posterior probabilities and obtain probabilities of hypotheses knowing the data ($p(H|D)$) instead of probabilities of the data knowing hypotheses ($p(D|H)$) using Bayes' theorem.
+
+- **Replication**: do the study again, maybe exactly the same or a conceptual replication with similar aspects. Results can be combined: first ones serving as prior information for Bayesian methods or useful in meta-analysis.
+- **Holdout**: the model is built on one part of the data and tested on another one. There is a need of a large sample to have enough to train and test the model separately. This technique is used very often in competitions.
+- **Cross-validation**: the same data is used for both training and testing. The idea is to cycle through the data and weaving the results together.  There is Leave-one-out (LOO: leave out one case at a time that serves as test data), Leave-p-out (LpO: leaving p cases at a time), K-fold (split the data in k groups, leave out one for testing and cycle through) and repeated random sub-sampling (where a random process is used at each point). Any of those can be used to develop the model on one part of the data and test on another and cycle through to see how it holds-up under different circumstances.
+
+This step helps checking the validity of the model and build confidence in the utility of the results.
+
+# Conclusion: DIY
+Do it Yourself. Data science is democratic. You just need to get started. You can do it. There is a lot of active development but cutting edge developments don't make that much difference in the interpretation. Just pay attention matching methods to your goals in order to build something that can be used. Remember everything has meaning. The meaning might not be what you expect, so it is important to listen carefully. No analysis is perfect. The question is: can it add value? Note there is always something to work on... Explore and write what you know... Just get started...
 
 ---
