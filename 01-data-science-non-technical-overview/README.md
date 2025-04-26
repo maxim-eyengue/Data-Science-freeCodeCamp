@@ -107,11 +107,8 @@ It is any technology allowing to manipulate data in the way you need to perform 
 > Note that tools are just means, use them wisely. A few tools are enough, you should just focus on your goal, choosing the right tools to match it.
 
 ### 3. Math
-It is important because:
-- you need to know which procedures to use and why
-- you need to know what to do when things don't work right
-- some math is easier by hand than computer
-Math is to data science what chemistry is to cooking, kinesiology to dancing, or grammar to writing. You can be a wonderful cook without knowing chemistry but knowing some will definitely help 🍳🔬
+It is important because you need to know which procedures to use and why, what to do when things don't work right, and some math is easier by hand than computer. Math is to data science what chemistry is to cooking, kinesiology to dancing, or grammar to writing. You can be a wonderful cook without knowing chemistry but knowing some will definitely help 🍳🔬  
+
 The Maths you'll need:
 - Elementary Algebra
 - Linear (matrix) Algebra
@@ -148,7 +145,8 @@ Remember the client isn't you, and think of:
 - Egocentrism: They don't see, know or understand things the same way you do. 
 - False consensus: ideas that everybody knows something.
 - Anchoring: initial impressions matter a lot. Watch out.
-- Clarity at each step.
+- Clarity at each step.  
+
 Tell a **data-driven story**: state the question, answer it, qualify as needed and go in order but don't spend too much time on discussing the process technically. 
 The process is to remember that *analysis* means simplifying. 
 
@@ -162,7 +160,9 @@ In sum, stories give value to data analysis and should be told in a clear way, m
 
 ### 🎯 Actionable Insights
 Those are information that can be used productively to accomplish something.
+
 > "My thinking is first and last and always for the sake of my doing" - William James
+
 This thought applies to analysis. When performing an analysis, point the way (analysis guide action). You should be able to tell the clients what are the next steps (what they need to do now), justifying those recommendations with data. You should be specific and make sure they are able to do them step by step. 
 The problem here is the difference between **correlation** and **causation**. Data gives correlation (this is associated with that), but the client wants causation (this causes that). There are few ways to get that:
 - **Experimental studies**: randomized controlled trials.
@@ -170,7 +170,7 @@ The problem here is the difference between **correlation** and **causation**. Da
 - **Theory & Experience**: research based theory and domain-specific experience
 There are also social factors affecting the data.
 ![Data & Social](./images/ds_social.png)
-We should make sure our recommendations follow: the client's mission (what he does), identity (who he is), its business context (competitive environment) and also the social context (outside and inside the company).  4
+We should make sure our recommendations follow: the client's mission (what he does), identity (who he is), its business context (competitive environment) and also the social context (outside and inside the company).
 
 ### 📊 Presentation Graphics
 Trying to paint a picture for the benefits of the client:
