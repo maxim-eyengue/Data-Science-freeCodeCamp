@@ -582,90 +582,181 @@ Tools are _means_, not the end. Data science is much more: problem framing, comm
 
 ---
 
-# Mathematics in data science
-Math matters to data science. There are few ways why it does:
-- it allows to know which procedures to use and why, to answer questions in the best way.
-- it helps to know what to do when things don't work right.
-- some math is easier by hand than using computers
-Which math?
-- Algebra: We will focus on three kinds: Elementary algebra (regular $x + y$), linear (matrix) algebra (used by computers for calculations), systems of linear equations.
-- Calculus, Big O (speed of complexity of operations), probability theory, Bayes theory (changing the way analyses are interpreted using posterior probabilities).
-Remember: You can do it!
+# 🔢 Mathematics in Data Science
+Math matters *a lot* to data science! Here's why:   
+- ✨ **Guidance**: It tells us which procedures to use and why, helping us answer questions optimally.
+- 🛠️ **Troubleshooting**: When things go wrong, math shows us how to debug and fix issues.
+- ✍️ **Simplicity by Hand**: Some concepts are easier to grasp and compute by hand before coding 🖐️💻.
 
-##  Foundations
-### Elementary Algebra
-Nothing is more foundational than elementary algebra. Algebra means restoration. Algebra aligns to combine multiple scores, get a singe outcome, with calculations easy for one case at a time, especially when doing it by hand. For example, it is possible to determine an output i.e a salary in function of some parameters i.e constant (base salary), years of experience, bargaining skills, number of working hours and an error term.
+### 📚 Which math? 
+- **Algebra**: Elementary algebra (good old $x + y$ 👨‍🏫), linear algebra (matrix magic 🧙‍♂️), and systems of linear equations.  
+- **Calculus**, **Big O** (how fast stuff runs 🏃‍♂️💨), **Probability theory**, and **Bayes' theorem** (interpreting results in smarter ways 🧠 using posterior probabilities).
+
+💡 **Remember**: *You can do it!* 🚀  
+
+## 🏗️ Foundations
+### ✖️➕ Elementary Algebra 📐
+Nothing is more foundational than **elementary algebra**. "Algebra" literally means "restoration" 🛠️ It is about combining multiple scores into one outcome, calculated easily case-by-case, especially by hand ✍️.
+
+**Example:**  
+You can model a salary depending on parameters like:
+- Base salary 💵 (a constant)
+- Years of experience 📅
+- Bargaining skills 🧑‍💼
+- Number of working hours ⏳
+- Error term (unpredictable stuff 🌪️)
 ![Equation](images/alg_equation.png)
 
-### Linear Algebra
-Welcome to the matrix! There are some terms we need to be familiar with:
-- scalar: one number.
-- vector: row or column of numbers, that can be treated as aa collection (usually a variable).
-- matrix: many rows & columns.
-Machines loves matrices as they understand numbers. We can used them to compute outputs for many cases.
-![Salary for two persons](images/salary_matrices.png)
-We then get the matrix notation:
-$$Y = X\beta + \epsilon.$$
-with $Y$ the vector of outcomes, $X$ the entire matrix of people parameters values, $\beta$, all te regression coefficients, and $\epsilon$ the error term vector.
+### 🧮 Linear Algebra  
+Welcome to the matrix! 🔢✨ There are some terms we need to be familiar with:  
+- **Scalar**: One lonely number 1️⃣.  
+- **Vector**: A row/column of numbers, like a *group* (think: a variable) ➡️.
+- **Matrix**: Rows and columns together -> a grid 🗺️.     
+⚡ **Machines ❤️ matrices:** it's how they "see" numbers and make fast calculations.
 
-### Systems of linear equations
-There are times you try to solve many unknowns simultaneously, knowing a lot of them are interlocked ($X$ depends on $Y$, and at the same time, $Y$ depends on $X$). Funnily, it is actually easier to solve that by hand and we can also use linear / matrix algebra to do it. For example, let's imagine $1000$ iPhone cases were sold, some for $\$20$, others for $\$5$, making $\$5,900$. The question is: how many were sold for each price? We can get a solution by designing a system of linear equations:
+Example:  
+Salary calculations for multiple people:
+
+![Salary for two persons](images/salary_matrices.png)
+
+Matrix notation:  
+$$Y = X\beta + \epsilon.$$
+
+where:  
+- $Y$ = outcomes vector 🎯  
+- $X$ = people parameters matrix 🧩  
+- $\beta$ = regression coefficients 🔎  
+- $\epsilon$ = error term vector ⚡
+
+
+### 🔗 Systems of Linear Equations
+Sometimes you have *many unknowns* tied together (like $X$ depends on $Y$ and vice versa 🔄). It can be easier to solve *by hand* 🖐️, or using matrix algebra.
+
+**Example:**  
+Imagine 1000 iPhone cases sold:
+- Some at \$20 📱💸
+- Others at \$5 📱💵
+- Total revenue = \$5,900.
+
+Question: *How many sold at each price?* 🤔
+
+System of equations:  
 ![Linear equations system](images/lin_system.png)
-Solving that help us to understand $60$ cases were sold at $\$20$ each and $940$ at $\$5$ each. The solution can also be obtained by drawing: 
+
+**Solution**:  
+- 60 cases at \$20  
+- 940 cases at \$5  
+
+You can also get the solution **graphically** 📈:
+
 ![Graphical solution](images/graph_solution.png)
 
-### Calculus
-Formalized by Newton and Leibniz, Calculus is the latin for stone (as those used for tallying). Importance of Calculus in data science:
-- Basis: Least square regression, probability distributions, etc.
-- Change: measuring quantities or rates that change over time.
-- Min/Max: finding maxima & minima functions in optimizing.
-There are two kind of calculus:
-- Differential calculus: or calculus of change to talk about rates of change at specific time.
-- Integral calculus: or calculus of accumulation, to calculate the quantity of something at a specific time, given the rate of change. 
+### 🧗 Calculus  
+Formalized by Newton and Leibniz, **Calculus** = "stone" in Latin 🏛️ (as those used for tallying) and matters in data science:   
+- **Basis**: Least squares regression, probability distributions, etc. 📊   
+- **Change**: Quantifying change over time 🔁   
+- **Min/Max**: Finding maxima & minima functions in optimizing (e.g., maximizing profit) 📈📉
+
+There are two kind of calculus:   
+- **Differential calculus**: Focused on derivatives (rates of change) 🌡️
+- **Integral calculus**: Accumulating quantities over time (integrals) 📥
+
+Example: calculating a slope
+
 ![Slope computation](images/slope_eq_derivative.png)
-The slope at any given point of a curve is given by its derivative. We can use these procedures to optimize decisions.
+
+**Takeaway**: Derivatives give slopes ➡️ help optimize decisions 🚀.
 
 
-### Calculus & Optimization
-The place where Math meets reality. Calculus makes it possible to find values that maximize or minimize outcomes. For example, if you want to maximize your revenue from pricing online dating services, you can use calculus. Let's say annual subscriptions cost \$ $500$ a year, and you usually sell 180 new ones per week. Based on some experience, you know that for each \$ $5$ discount  from the subscription cost, you will get $3$ more sales. We will also assume there is no increase in overhead.
-This said , let $d$ the number of \$ $5$ discounts, we get as mathematical expressions for the price: \$ $500$ - \$ $5d$, and for the number of sales: $180 + 3d$. The goal is to maximize the final revenue which is the product of the number of sales by the price of each subscription. To do so, we can first write sales ($y$) as a function of price ($x$). For tat, we will get both the Y intercept and the slope of the function. The $y$ intercept indicate the value of the function when x is 0. If $x=0,$ then \$ $500$ - \$ $5d = 0 \Leftrightarrow d = 100.$ Thus the $y$ intercept value is given by: $180 + 3(100) = 480.$ Now that we have $y$ intercept, we can find the slope of the function. The slope is defined by: change in $y$ by the change in $x$. This change in our case is function of the number of discounts $d$.
-![Slope definition](images/def_slope.png)
-This said, the slope value is $+ 3 / (-5) = - 0.6$. We then have sales as a function of price: $\text{Sales} = 480 - 0.6 \text{ price}$. Now, we can have the revenue expression:
-$\text{Revenues} = \text{sales} * \text{price} = (480 - 0.6 \text{ price})\times\text{price} = 480 \text{ price} - 0.6 \text{ price}^2.$ For maximizing our revenue, we will get the derivative of its expression in function of price. It's: $480  - 1.2 \text{ price},$ and solve that for $0$ as it will give us the place where the revenue is at its maximum (when the slope is equal to $0$). The optimal price is then \$ $400$, which give a sales volume of $240$ for a maximal revenue of \$ $96,000.$ Note that this represents  a $7\%$ increase of revenue from the original price of \$ $500$ for $180$ subscriptions per week. In sum, using calculus allowed to lower the cost of each subscription, increasing the sales and the total revenue.
+### 📈 Calculus & Optimization ⚙️
+Calculus makes it possible to find values that maximize or minimize outcomes. It is **the place where math meets reality!** 🌎  
 
-## Data principles
-### Big O
-Big O is about time: the speed of operations. "O" for order as the growth rate of a function is called its "order". Big O gives the rate of how things grow. Some kinds of growth rates (Big O):
-- The simplest: **O(1)**, the constant order: takes a certain amount of time no matter what. Sending an email to 10,000 = as for 1 person.
-- The logarithmic order: **O(log(n))** there is a small increase in function of the number of elements or operations. Ex: finding an item in a sort array.
-- The linear order **O(n)**: each operation takes a same unit of time, i.e: 50 operations - 50 amounts of time.
-- The log-linear order **O(n log(n))**: it takes longer as you should multiply the number of items by its $log$. Ex: Fourier de Transform.
-- The quadratic order **O($n^2$)**: Ex: multiplying $2$ numbers of $n$ digits takes a while.
-- The exponential order **O($2^n$)**: really demanding, i.e finding an exact solution to the traveling salesman problem, using dynamic programming.
-- The factorial rate of growth **O(n!)**: hugely demanding. i.e: 
-finding an exact solution to the traveling salesman problem through the blues fold search.
-Some methods are more variable than others. For example, when you consider sorting methods, the **insertion sort** is linear in its best day but quadratic averagely, when the **selection sort** is quadratic both in its best version, and averagely. 
+**Example:**  
+Selling online dating subscriptions 💘:
+- \$500 annual cost  
+- 180 sales per week  
+- For every \$5 discount (d) ➡️ +3 new customers  
+- There is no increase in over
 
-The most import thing is to be aware of the demands so we can get the answers needed in the right time.
+We will do some **Math magic to maximize revenue** 🧮 and for that we need the following expressions:  
+- Price = \$500 - \$5d  
+- Sales = 180 + 3d  
+
+**Step-by-step process**:  
+1. Find the $y$-intercept and slope:  
+   - $y$-intercept: 480  
+   The $y$ intercept indicates the value of the function when x is 0. If $x=0,$ then \$ $500$ - \$ $5d = 0 \Leftrightarrow d = 100.$ Thus, the $y$ intercept value is given by: $180 + 3(100) = 480.$
+   
+   - Slope: $-0.6$  
+   The slope is the change in $y$ by the change in $x$. This change in our case is function of the number of discounts $d$.
+   ![Slope definition](images/def_slope.png)
+   This said, the slope value is $+ 3 / (-5) = - 0.6$.
+   
+   Sales function of price:  
+   $$\text{Sales} = 480 - 0.6 \times \text{Price}$$
+
+2. Revenue function:  
+   $$\text{Revenue} = 480 \times \text{Price} - 0.6 \times \text{Price}^2$$
+
+3. Revenue Derivative in function of Price = $480 - 1.2 \times \text{Price}$.  
+   Set it equal to zero ➡️ Optimal price: \$400 🎯
+
+4. Results:
+- 240 subscriptions sold 📈
+- Maximal revenue = \$96,000 💰  
+- Revenue increase of +7% 🚀!
+
+👉 *Moral*: Using Calculus for lowering prices smartly = more sales + more total revenue 💡
+
+## 📊 Data Principles
+
+### ⏱️ Big O Notation 🔍
+**Big O** = time & speed. "O" for "**Order**" describes how computation time grows with input size 🚀
+
+| Growth rate                | Notation         | Example                                     |
+|----------------------------|------------------|---------------------------------------------|
+| Constant                    | $O(1)$           | Sending an email (⏰ Same time for 1 or 10,000 recipients)   |
+| Logarithmic                 | $O(\log n)$     | 🔍 Binary search in a sorted array (small increase in function of the number of elements)           |
+| Linear                      | $O(n)$           | Scanning all items (⏳ 50 operations = 50 times)                          |
+| Log-linear                  | $O(n \log n)$   | ⏲️ Fourier Transform, Efficient sorts (e.g., mergesort)           |
+| Quadratic                   | $O(n^2)$         | 🧩 Multiplying $n$-digit numbers, Simple sorts (e.g., selection sort)         |
+| Exponential                 | $O(2^n)$         | 🌋 Brute-force Travel Salesman Problem                            |
+| Factorial                   | $O(n!)$          | 🧨 Exhaustive search (TSP through the blues fold search)                         |
 
 
-### Probability
-To answer to the question: what are the odds of something?
-The principles of probability:
-- They range from $0$ to $1$.
-- $P(A) = $ probability of the event $A$.
-- $P(S)$, the probability space is all the probabilities together and gives $1$.
-- The probability of the complement of $A$ is $P(\sim A) = 1 - P(A).$
-There are also conditional probabilities:
-- A conditional probability, probability of $A$ given $B$ $P(A|B) =$ Probability of $A$ if $B$ is true.
-- We meet them a lot in hypothesis testing with probabilities of Type I & II errors.
-Some arithmetic with probabilities:
-- **For adding probabilities:**
-$P(A \text{ or } B) = P(A) + P(B) - P(A ~\&~ B)$. Note that when the events $A$ and $B$, are disjoints, they never occur together, which means $P(A ~\&~ B) = 0$ and then $P(A \text{ or } B) = P(A) + P(B).$
-- **Multiplications for probabilities:**
-We want to get joint probabilities: the probability of two things occurring together simultaneously.
-$P(A ~\&~ B) = P(A) \times P(B|A)$ but if A and B are independent 
-$P(B|A) = P(B)$, and then $P(A ~\&~ B) = P(A) \times P(B).$
+✨ *Pro Tip*:  
+Know your Big O to get answers *fast enough* when needed as some methods are faster than others.
+
+**Example:**  
+- **Insertion sort** = linear *best case*, quadratic *average* 📉.  
+- **Selection sort** = quadratic *both cases* 😬.
+
+
+### 🎲 Probability
+Answering: **What are the odds?** 🎯  
+
+Principles:
+- Probabilities range between $0$ (no chance ❌) and $1$ (sure thing ✅).
+- $P(A)$ = Probability of event A.
+- $P(S)$ = Total probability = 1 (whole probability space 🌌).
+- Complement:  
+  $$P(\sim A) = 1 - P(A)$$
+
+> Conditional probabilities:   
+ $P(A|B)$ = Probability of A given B is true 🔄    
+ 👉 They are often seen in **hypothesis testing** (Type I & II errors).
+
+**Arithmetic rules**:
+- **Adding probabilities**:  
+  $$P(A \text{ or } B) = P(A) + P(B) - P(A ~\&~ B)$$
+  (If A & B are disjoint: $P(A ~\&~ B) = 0$ ✅)
+
+- **Multiplying probabilities**:  
+  $$P(A ~\&~ B) = P(A) \times P(B|A)$$
+  (If independent: $P(B|A) = P(B)$)
+
+🎯 *Key*:  
+Knowing how probabilities behave helps in everything from simple questions to complex risk models!
 
 ---
 
@@ -809,16 +900,3 @@ This step helps checking the validity of the model and build confidence in the u
 Do it Yourself. Data science is democratic. You just need to get started. You can do it. There is a lot of active development but cutting edge developments don't make that much difference in the interpretation. Just pay attention matching methods to your goals in order to build something that can be used. Remember everything has meaning. The meaning might not be what you expect, so it is important to listen carefully. No analysis is perfect. The question is: can it add value? Note there is always something to work on... Explore and write what you know... Just get started...
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
