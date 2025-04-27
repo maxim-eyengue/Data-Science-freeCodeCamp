@@ -760,143 +760,238 @@ Knowing how probabilities behave helps in everything from simple questions to co
 
 ---
 
-# Statistics in data science
-We can use Statistics to see the unseen in data. Why Statistics matters: counting is easy but summarizing and generalizing are hard. Also, all analyses really depend on the example we are dealing with. The way you explain the difference between words for example, let's say: chess and programming, depend on who you are talking to, your goal, and the shared knowledge. There is not a single answer. Can you for example safely describe all of Agatha Christie's books? Can you predict the behavior of all the voters in Cameroon from Twitter $237$ posts?   
-There are different methods that can be used in Statistics: Descriptive Statistics, Inferential Statistics, Hypothesis testing, and Estimation. A lot of choices has to be made: choice of estimators, different measures of fit, feature selection (to know which variable are more important in predicting the outcome), common problems when trying to model data, and model validation.
-Remember: Analysis is functional, designed to serve a particular purpose. As George Box said: "all models are wrong, but some are useful." You are not trying to be totally accurate, but to be better off dong your analysis.
+# 📊 Statistics in Data Science
+Statistics let us **see the unseen** in data. 👀 Why does it matter? Because *counting* is easy... but *summarizing* and *generalizing* are **quite hard**. Every analysis depends on the *context*: the audience, your goal, and the shared knowledge. For instance: 🧠 how you explain the difference between "chess" and "programming" varies depending on *who* you're talking to.  
 
-## Exploring data
-### Exploration overview
-It is important to see what the dataset is like to check if assumptions are met, so we can do a valid analysis with our chosen procedure. EDA helps to listen to the data, to pay more attention f something doesn't work as expected.
-We can do:
-- a graphical exploration: using visualizations to explore the data as graphs are dense in information and give a great overall impression. This includes doing: bar charts, histograms scatter plots, etc.
-- a numerical exploration: second step to get more precision, it is an opportunity to tray variations and some methods: maybe some transformation on the data. This includes transforming the data (maybe with the logarithmic of their numbers to make them more normal, or reduce the skew if any), some empirical estimates of population parameters, robust methods.
-Exploration helps to know the data, and listen to it. It is important before modeling.
+There isn't a single answer to everything:   
+❓ Can you *safely* describe *all* of Agatha Christie's 📚 books?  
+❓ Can you predict the behavior of *all voters* in Cameroon 🇨🇲 from Twitter posts with the $237$ hashtag?
 
-### Exploratory graphics
-You can see a lot by just looking. It gives a feel of data: how it is distributed, its shape. It also allows to check for assumptions, and anomalies (outliers, unusual distributions), and get suggestions (maybe we should do a deeper analysis). We usually do graphics first, for a couple of reasons:
-- they are very information dense
-- humans are visual
-- it is the best way to check for shape, gaps, and outliers
-We can graphically explore the data in different ways: Code (R, Python, Javascript), Apps (Tableau, Qlik, Excel) or by hand (refer to John Tukey's book).
-The process for doing  these graphics is as follow: 
-- For one variable (univariate distributions): we can use bar chart when dealing with categories; they are really easy to read, and can be ordered. We an also use a box plot when ewe have quantitative variables (something that is measured). Box plots show quartile values and also outliers. It can be used to show many variables side by side if they are on a similar scale. For quantitative variables, we can also use histograms, this time to see the shape of distributions, and maybe compare many.
+In Statistics, we have several methods:
+- **Descriptive Statistics**
+- **Inferential Statistics**
+- **Hypothesis Testing**
+- **Estimation**
 
-- For two variables at a time (bi-variate distribution or joint distribution): we can group bar charts & box plots. It is a good way to see the association of categories and a quantitative variable. We can also do a scatter plot when we have two quantitative variables. It helps to check if the relation is linear, if there are outliers, and also the strength of the association (how close are the dots from a regression line).
+And many choices to make along the way: 📈 estimators, measures of fit, feature selection (which variables matter the most?), model validation... 🤔  
 
-- For many variables (multi-variate distribution): avoid doing 3D graphs as they distract more than they provide information, and can be hard to control (they need to be in motion). They might be useful however for clustering. It is better to use a matrix of plots. We can add markers for groups and it is clearer than 3D.
- 
-The goal of this exploration is to know if we have the data that we need, if there are clumps or gaps, if there are exceptional cases or errors in the data. In sum, it is a critical step, where we use quick and easy methods.
+🔔 **Remember**: Analysis is functional, it's designed to serve a purpose.  
 
-### Exploratory Statistics
-It is the numerical or quantitative exploration of the data, which allows to get empirical estimates (population parameters as opposed to theoretical based ones), helps manipulating the data (looking subgroups, or transforming variables), and checking the sensitivity of results.
+> *"All models are wrong, but some are useful."*  - George Box
 
-- Robust Statistics: stable estimates which are less affected by outliers, skewness, kurtosis, or any anomaly in the data. Some robust statistics are the: **trimmed mean** (throwing a certain percentage of the data from the top and the bottom), and the **Winsorized mean** (moving a certain percentage of the data from the top and the bottom, to the highest non-outlier score). Note that when trimming $50\%$ of the data both from the top and bottom we get the median.
+👉 You're not aiming for total accuracy, you're aiming to be *better off* with your analysis.
 
-- Resampling: that is an empirical estimate of sampling variability. There are several versions of this: Jackknife, bootstrap, permutation. The basic principle of resampling is key to cross-validation.
+## 🧭 Exploring Data 🔎
 
-- Transforming: the idea is to take a difficult dataset and perform smooth functions (functions without jumps in it). They help preserving the order, keeping the full data set, while fixing skewed data, and curved lines.
+### 🌟 Exploration Overview
+
+Before any modeling, we *must* explore the data to check if assumptions are met. Good analysis = *listening to the data*. 🎧 Exploratory Data Analysis (EDA) also helps when something feels "off" or unexpected with the data.
+
+Two main approaches:
+
+- **Graphical exploration** 🖼️:  using **visualizations** (bar charts, histograms, scatter plots, etc.) because graphs are rich in information and give a powerful first impression!
+
+- **Numerical exploration** 🔢: for **precision**. It allows experimenting with transformations (e.g., log transformations to normalize the data) and getting empirical estimates.
+
+Exploration is all about **getting to know the data** deeply before modeling. ✅
+
+### 📈 Exploratory Graphics
+
+"You can see a lot just by looking." – so true! 👀 Exploratory graphics help you understand: the **distribution** and the **shape** of the data, check for **anomalies** (outliers, strange patterns), and can suggest deeper analyses.
+
+We usually **start with graphics** because they are *information dense,* 💥 humans are *visual* creatures 🎨 and it's the *best way* to spot gaps, shapes, outliers, etc.
+
+You can explore data graphically using:
+- **Code**: Python, R, Javascript 🐍🧮
+- **Apps**: Tableau, Qlik, Excel 📊
+- **Your hands**: refer to John Tukey's book 📚
+
+📊 The process for doing Exploratory Graphics depends on the data:
+
+🔹 **One variable (Univariate Distributions)**:
+  - *Categorical*: Bar charts 📊 are easy to read and can be ordered.
+  - *Quantitative*: Box plots 📦 show quartiles and outliers. We can compare multiple variables if on a similar scale. Histograms 📉 reveal distribution shapes.
+
+🔹 **Two variables (Bivariate / Joint Distributions)**:
+  - Grouped bar charts & box plots: 🧩 association between category and quantity.
+  - Scatter plots: 🎯 for two quantitative variables, to assess linearity, outliers, and strength of association (how close are the dots from a regression line).
+
+🔹 **Many variables (Multivariate Distributions)**:
+  - 🚫 Avoid 3D plots (can be distracting and unclear unless animated and are better for clustering).
+  - ✅ Prefer matrices of plots (like pair plots) for clear and controlled comparison. Markers can be added for groups.
+
+🎯 Critical step before modeling, the goal is to check:  
+- Do we have the data we need?  
+- Are there clumps, gaps, exceptional cases, or errors?
+
+### 🔢 Exploratory Statistics
+
+It's the **numerical** or **quantitative** exploration 🧠 of the data which lets us:
+- Get empirical estimates: 📏 real-world estimates (population parameters) vs theoretical based ones
+- Manipulate the data (subgroups, variable transformations)
+- Check the *sensitivity* of results.
+
+💪 Key Techniques are:
+
+- **Robust Statistics** 🛡️:  
+  Create *stable* estimates, less affected by outliers/skewness/kurtosis or any anomaly in the data.  
+  Examples:
+  - **Trimmed mean**: Throw away a % of the top and bottom data points.
+  - **Winsorized mean**: Replace extremes by the highest non-outlier score.  
+  *(Trim 50% = Median!)*
+
+ - **Resampling** 🔁: 
+ That is an empirical estimate of sampling variability. There are several versions: *Jackknife*, *Bootstrap*, *Permutation*. The basic principle of resampling is *key* to **cross-validation** 💡
+
+ - **Transforming** 🔄: 
+ The idea is to Apply *smooth* functions (functions without jumps in it) to fix skewed data or curved relationships. They help preserving the order, keeping the full data set, while fixing skewness, and curved lines.
+
+📷 *Example of transformations*:
 ![Feature engineering functions](images/transform_var.png)
-Those functions help to get back to a more centrally distributed distribution.
+
+✔️ These help get a more centered, normal distribution!
 
 Exploratory Statistics help to get multiple perspectives on the data, check the stability and get ready for modeling.
 
 
-### Descriptive Statistics
-It is about trying to use a little data (few numbers) to stand in for a lot of data. We want to describe:
+### 📋 Descriptive Statistics 🧩
 
-- the center of the data distribution:  mode (most commonly occurrence score/observation but may not be close to what seems t be the center of the data), median (place at the number line or observation that splits the data into two group, but hard to use as information), mean ($m = \dfrac{\sum{X}}{N}$: the sum of scores divided by the number of scores), etc. Note that the mean is the least intuitive and it follows the extreme scores: as more affected by the skew of the data, but it is the most useful one.
+The art of using *a few numbers* to represent *a lot of data* 🎯.  
 
-- the spread (dispersion or variability): the range (it is the maximum score minus the minimum one, easy to compute but strongly affected by outliers). The percentiles & inter-quartile range (the IQR is the distance between the third quartile score or $75\%$ percentile and the first one or $25\%$ percentile) are good for skewed data as they ignore extreme scores. The variance (the average square  deviation from the mean: $Var = \sum{(X - M)^2}/N$) & standard deviation ($std = \sqrt{Var}$) are least intuitive and the most affected by outliers but are also the most useful. Those formulas are slightly different from populations and sample but give similar values.
+We describe the:
 
-- the shape of the distribution: symmetrical (the same at the left and the right) or skewed (most data is on one end and outliers are on the other end i.e the positive or right skewed lacks data at the right), uni-modal (means there is only one mode in the data with contrast to bimodal where there are two) or Uniform (where every response is equally common), the U-shaped distribution (people piling up in one end and the other with a big deep in the middle). The shape of the distribution helps understand the numerical summaries and put them into context.
+- **Center of the distribution** 🏹:
+  - *Mode* 🎯 (most common observation, but can be misleading)
+  - *Median* ➗ (middle observation, good for skewed data)
+  - *Mean* ➕ (average of all scores: \[ m = \dfrac{\sum{X}}{N} \], the least intuitive and skew-sensitive but most useful)
 
-## Inference
-### Hypothesis testing
-The idea is to start with a question: "what is the probability of $X$ by chance if randomness / meaningless sampling variation is the only explanation?" and the response is: "If probability of data arising by chance is low, then reject randomness as a likely explanation." It is really common in Scientific research , and can be very useful for medical diagnosis, or anytime we are trying to make a Go / no go decision.
-For hypothesis testing, you need to have:
-- a null hypothesis ($H_0$): no systematic effect between groups, and random sampling error is the only explanation.
-- an alternative hypothesis: systematic effect, correlation between variables.
-We have to decide whether to retain or reject the null hypothesis but things can go wrong:
-- false positive: when the sample shows some kind of statistical effect but it's randomness. That's conditional on rejecting the null. It's a Type I error. Most common value to reject the null hypothesis is $0.05$
--  false negative: when the data looks random but it's systematic. It's conditional on retaining the null hypothesis and is called type II error. It needs to be calculated.
+- **Spread / Dispersion / Variability** 🌪️:
+  - *Range* ↔️ Max - Min (easy but outlier-sensitive)
+  - *Percentiles & IQR* 🧮 Good for skewed data (ignore extreme scores). The Inter-Quartile Range is the distance between 25th and 75th percentiles.
+  - *Variance* (\[ Var = \frac{\sum(X-M)^2}{N} \]) and *Standard Deviation* (\[ std = \sqrt{Var} \]): less intuitive, sensitive to outliers but very powerful! Those formulas are slightly different from populations and sample but give similar values.
 
-The problem wit hypothesis testing s that it is really easy to misinterpret:
-- a statistical meaningful result is confound with the sample size. It doesn't mean it is something big or meaningful.
-- assumption of a null or nil effect: zero effect at all and in some situations it can be an absurd claim.
-- Bias from cutoff: anytime there is a cutoff, there are problem where there are cases slightly lower or higher.
-- some just try to answer the wrong question: instead of looking the probability to get the data at random.
+- **Shape of the Distribution** 🧬:
+  - Symmetric 🔵 (the same at the left and the right)
+  - Skewed ➡️ positive / right or ⬅️ negative / left (right skew = lack of data on the right)
+  - Uni-modal (only one mode in the data), Bimodal (two modes in the data), Uniform ⚖️ (where every response is equally common), U-shaped (pile-ups at extremes) 🛶 distributions
 
+➡️ The **shape** helps you interpret all your numerical summaries meaningfully.
 
-### Estimation
-It is designed to give a number, an estimate for a parameter we are trying to geth. The most common for it is confidence intervals. It is still an inferential procedure. But here we focus on likely values. It is useful to estimate any sample statistic. There are few versions: parametric vs. bootstrap methods: to randomly sample the data to get an idea of the variability, central vs. noncentral confidence intervals in estimation.
+## 🧠 Inference
 
-We need to choose a confidence level between 0 and 1 exclusive. $95\%$ is the most common. It gives a range of numbers: high and low. The higher he level of confidence the wider the range will be.
+### 🧪 Hypothesis Testing
 
-There is a trade off between accuracy (on target interval that contains the true population, leading to the correct inference) and precision (a narrow interval: a small range of likely values, independent of accuracy).
-![Illustration of precision and accuracy](images/accuracy_and_precision.png)
-No matter what you do, you should interpret confidence intervals. 
+Start with a big question:
+> "What's the probability of observing X purely by chance if randomness (meaningless sampling variation) is the *only* explanation?" 🤔
+
+If **low probability of data arising by chance** ➡️ Reject randomness as a likely explanation❌. This approach is everywhere: scientific research 🧬, medical diagnosis 🩺, business decisions 💼
+
+Key elements:
+- **Null Hypothesis ($H_0$)**: ➡️ No systematic effect (only random noise).
+- **Alternative Hypothesis** ➡️ There *is* a systematic effect with correlation between variables.
+
+⚠️ We have to decide whether to retain or reject the null hypothesis but things can go wrong:
+- **False positive** (Type I error) ❌: conditional on rejecting $H_0$ incorrectly. Here, randomness looks like an effect.
+- **False negative** (Type II error) ❌: conditional on failing to reject $H_0$ when we should. Here, real effect looks like randomness.
+
+Typical cutoff: **$p = 0.05$** 🧷
+
+Common problems with hypothesis testing:
+- Confusing *statistical significance* with *practical significance*. In fact, a statistical meaningful result is confound with the sample size. 
+- Assuming *null* or *nil effect* i.e: *zero effect* is reasonable (sometimes unrealistic).   
+- Bias from arbitrary cutoffs 🔪.   
+- Asking the wrong question entirely!
+
+⚠️ **Always be cautious** when interpreting p-values and "significant" results!
+
+### 📏 Estimation
+
+Goal ➡️ Give a *number estimate* for the parameter of interest. 🎯 (*Most common:* Confidence Intervals.)
+
+It's still an inferential procedure: focusing on likely values 📈.
+
+Types:
+- **Parametric** (based on assumptions) vs **Bootstrap**: resampling the data for variability   
+- **Central** vs **Noncentral** confidence intervals
+
+Pick a **confidence level** between 0 and 1 (exclusive). ➡️ Most use **$95\%$**: gives a likely range (lower ↔️ upper bound) for the true value.
+
+⚖️ Trade-off:
+- **Accuracy** ➡️ On target interval that contains the true population, leading to the correct inference.
+- **Precision** ➡️ Narrow interval (but could miss the true value).
+
+📷 *Example illustration*:
+![Precision vs Accuracy](images/accuracy_and_precision.png)
+
+---
 Example:
-- Result: the $95\%$ confidence interval for the mean is $5.8$ to $7.2$.
-- Colloquial: there is $95\%$ chance that the population mean is between $5.8$ and $7.2$. But in frequentist statistical procedures, it implies that the population mean shifts and that's not how people see it.
-- Better: $95\%$ of confidence intervals for randomly selected samples will contain the population mean.
+- 📈 *Result*: The $95\%$ confidence interval for the mean is $5.8$ to $7.2$.
+- 🗣️ *Colloquial*: There's a $95\%$ chance the population mean is between $5.8$ and $7.2$.
+- 🎯 *Better (Frequentist view)*: *95% of such intervals from random samples will contain the true population mean.*
 
-Remember:
-Higher confidence levels create wider intervals. The moe certain you want to be, you are gonna give them a wider range. Larger standard deviations create wider intervals. If what you study is inherently variable, then your estimate of the range will be variable as well. Larger sample sizes create narrower intervals.
+✨ Key takeaway:  
+Higher confidence levels give **wider ranges**: the more certain you want to be, the more room you allow! 🚪 Larger standard deviations create wider intervals. If what you study is inherently variable, then your estimate of the range will be variable as well. Larger sample sizes create narrower intervals.
 
-Confidence intervals, most common version of estimation, focus on the population parameter, the variation of the data, being included in that estimation. They are more informative as they tell us wether the population value is likely but they give a sense of the data itself, which is why people argue they should be included in any statistical analysis.
+Confidence intervals, most common version of estimation, focus on the population parameter, the variation of the data, being included in that estimation. They are more informative as they tell us whether the population value is likely but they give a sense of the data itself, which is why people argue they should be included in any statistical analysis. 
 
-## Choices
-### Estimators
+
+
+## 🔀 Choices
+### Estimators 📏
 That is different methods for estimating parameters: 
 
-- **OLS**: Ordinary Least Squares is a very common method used in a lot of statistics and based on the sum of squared errors. It is characterized by BLUE (Best Linear Unbiased Estimator)
+- **OLS (Ordinary Least Squares)**: a very common method used in a lot of statistics and based on the sum of squared errors. It is characterized by BLUE (Best Linear Unbiased Estimator)
 
-- **ML**: Maximum likelihood: when you choose parameters that make the observed data most likely. It's based on a local search and so, does not always find the best match.
+- **ML (Maximum likelihood)**: to find parameters that maximize the likelihood of observed data. It's based on a local search and so, does not always find the best match.
 
-- **MAP**: Maximum a posteriori is a Bayesian approach that add a prior distribution and goes through an anchoring and adjusting process. 
+- **MAP (Maximum A Posteriori)**: a Bayesian approach that adds a **prior** distribution and goes through an anchoring and adjusting process. 
 
-Those three standards connect together. **OLS** is equivalent to **ML** wit normally distributed errors, and **ML** to **MAP** with a uniform prior distribution.
+👉 OLS = ML if errors are normal and ML = MAP with a uniform prior.
 
 The choice of method depends on your goals and what suits best to your data.
 
 
-### Measures of fit
-That is the correspondence between the data at hand and the  model created.
+### Measures of fit 📈
+That is the correspondence between the data at hand and the model created.
 
-- $R^2$: the squared multiple correlation or coefficient of determination. It compares the variance of the outcome variable to the residuals after making predictions. Scores range from $0$ to $1$ where $1$ is te perfect score. Its variation **Adjusted $R^2$** takes in consideration the number of variables.
+🔹 $R^2$: the squared multiple correlation or coefficient of determination. It compares the variance of the outcome variable to the residuals after making predictions. Scores range from $0$ to $1$ where $1$ is the perfect score. Its variation **Adjusted $R^2$** takes in consideration the number of variables.
 
-- $-2LL$: based on the likelihood ratio, or $-2 \log$ likelihood. It compares fit of nested models. It is used for binary outcomes in logistic regression and smaller scores are better. It has some variations including the $AIC$ (Akaike Information Criterion) and $BIC$ (Bayesian Information Criterion). Both adjust for the number of predictors to avoid over-fitting (when the model is tailored to specifically to the training data and does not generalize well.)
+🔹 $-2LL$: based on the likelihood ratio, or $-2 \log$ likelihood. It compares fit of nested models. It is used for binary outcomes in logistic regression and smaller scores are better. It has some variations including the $AIC$ (Akaike Information Criterion) and $BIC$ (Bayesian Information Criterion). Both adjust for the number of predictors to avoid over-fitting (when the model is tailored to the training data specifically and does not generalize well.)
 
-- $\chi^2$: chi-square is used to evaluate the deviations between the observed dataset and the expected values in each category.
+🔹 $\chi^2$: chi-square is used to evaluate the deviations between the observed dataset and the expected values in each category.
 
-Note that the choice affect the model (with or without penalization, quantitative or binary outcome) and depend on our goals.
+> Note that the choice affect the model (with or without penalization, quantitative or binary outcome) and depend on our goals.
 
-### Feature selection
-The choice of variables to include into your model. It's important to select best features and get rid of uninformative variables, so to simplify the model and avoid over-fitting. One danger here is multicollinearity: when we have overlaps between the predictor and the outcome variables. There are few ways for dealing with the des-entanglement of the association between predictors, with some common (looking at probabilities values in regression equations, standardized coefficients and variations on sequential regression) and other newer (commonality analysis, dominance analysis, and relative importance weights).
+### Feature selection 🧩
+The choice of variables to include into your model. It's important to select best features and get rid of uninformative variables, so to simplify the model and avoid over-fitting.
 
-- P-values: check the star for each predictor. It's problematic because with a large sample anything can easily become statistically significant.
-- Betas: standardized regression coefficients when all variables are put on the same scale. The trick is we can't separate them as the coefficient is only valid when predictors are taken together as a whole. 
-- Sequence: With stepwise procedure we can handle the issue with betas. There are sequential regressions where variables are entered in blocks, and we examine change in fit at each step. However, this increases the risk of over-fitting.
+One danger here is multicollinearity: when we have overlaps between the predictor and the outcome variables. There are few ways for dealing with the des-entanglement of the association between predictors, with some, common (*looking at probabilities values in regression equations*, *standardized coefficients* and *variations on sequential regression*) and others, newer (*commonality analysis*, *dominance analysis*, and *relative importance weights*).
 
-- Commonality analysis: provides separate estimates for unique and shared contributions of each variable. The problem form des-entanglement is moved to analysis. 
-- Dominance analysis: compares every possible set of predictors. But there is a lot of combinations when the number of variables increases.
-- Relative importance weights: create sets of predictors uncorrelated with each-other and predict outcomes without multicollinearity, and then back-transform (rescale the coefficients back to the original variables).
+Traditional techniques:
+- **P-values**: check the star for each predictor. It's problematic because with a large sample anything can easily become statistically significant.
+- **Betas**: *standardized regression coefficients* when all variables are put on the same scale. The trick is we can't separate them as the coefficient is only valid when predictors are taken together as a whole. They compare variable influence on the same scale.
+- **Sequence**: With *stepwise procedure,* we can handle the issue from betas. There are sequential regressions where variables are entered in blocks, and we examine change in fit at each step. However, this increases the risk of over-fitting.
+
+New methods:
+- **Commonality analysis**: provides separate estimates for unique and shared contributions of each variable. The problem from des-entanglement is moved to analysis. 
+- **Dominance analysis**: compares every possible set of predictors. But there is a lot of combinations when the number of variables increases.
+- **Relative importance weights**: create sets of predictors uncorrelated with each-other and predict outcomes without multicollinearity, and then back-transform (rescale the coefficients back to the original variables).
 
 It is important to choose the most useful variables in our model so to make it simpler, and reduce the noise in data.
 
-### Model validation
- The model fits the sample data but will it work well with other data: is it scalable? Few ways to get generalizability:
+### Model validation 🔍
+The model fits the sample data but will it work well with other data: is it scalable?     
+Few ways to get generalizability:
+- **Bayes**: to get Posterior probabilities and obtain probabilities of hypotheses knowing the data ($p(H|D)$) instead of probabilities of the data knowing hypotheses ($p(D|H)$) using Bayes' theorem.     
+- **Replication**: do the study again, maybe exactly the same or a conceptual replication with similar aspects. Results can be combined: first ones serving as prior information for Bayesian methods or useful in meta-analysis.       
+- **Holdout**: the model is built on one part of the data and tested on another one. There is a need of a large sample to have enough to train and test the model separately. This technique is used very often in competitions.       
+- **Cross-validation**: the same data is used for both training and testing. The idea is to cycle through the data, weaving the results together. There is **Leave-one-out** (*LOO*: leave out one case at a time that serves as test data), **Leave-p-out** (*LpO*: leaving p cases at a time), **K-fold** (split the data into k groups, leave out one for testing and cycle through) and **repeated random sub-sampling** (where a random process is used at each point). Any of those can be used to develop the model on one part of the data and test on another and cycle through to see how it holds-up under different circumstances.
 
-- **Bayes**: to get Posterior probabilities and obtain probabilities of hypotheses knowing the data ($p(H|D)$) instead of probabilities of the data knowing hypotheses ($p(D|H)$) using Bayes' theorem.
+> This step helps checking the validity of the model and build confidence in the utility of the results.
 
-- **Replication**: do the study again, maybe exactly the same or a conceptual replication with similar aspects. Results can be combined: first ones serving as prior information for Bayesian methods or useful in meta-analysis.
-- **Holdout**: the model is built on one part of the data and tested on another one. There is a need of a large sample to have enough to train and test the model separately. This technique is used very often in competitions.
-- **Cross-validation**: the same data is used for both training and testing. The idea is to cycle through the data and weaving the results together.  There is Leave-one-out (LOO: leave out one case at a time that serves as test data), Leave-p-out (LpO: leaving p cases at a time), K-fold (split the data in k groups, leave out one for testing and cycle through) and repeated random sub-sampling (where a random process is used at each point). Any of those can be used to develop the model on one part of the data and test on another and cycle through to see how it holds-up under different circumstances.
+# Conclusion: DIY 🛠️
+Do it Yourself. Data science is democratic. You just need to get started. You can do it. There is a lot of active development but cutting edge developments don't make that much difference in the interpretation. Just pay attention matching methods to your goals in order to build something that can be used.
 
-This step helps checking the validity of the model and build confidence in the utility of the results.
-
-# Conclusion: DIY
-Do it Yourself. Data science is democratic. You just need to get started. You can do it. There is a lot of active development but cutting edge developments don't make that much difference in the interpretation. Just pay attention matching methods to your goals in order to build something that can be used. Remember everything has meaning. The meaning might not be what you expect, so it is important to listen carefully. No analysis is perfect. The question is: can it add value? Note there is always something to work on... Explore and write what you know... Just get started...
+Remember everything has meaning. The meaning might not be what you expect, so it is important to listen carefully. No analysis is perfect. The question is: can it add value? Note there is always something to work on... Explore and write what you know... Just get started!
 
 ---
