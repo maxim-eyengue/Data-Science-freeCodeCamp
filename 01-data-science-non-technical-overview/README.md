@@ -323,128 +323,262 @@ Happy data hunting! 🎉
 
 ---
 
-# Coding in data science
+# 🚀 Coding in Data Science 🛠️
 
-We are gonna take a look at tools in Data Science and their place.
-Note that data science is much more than the tools involved. We will need at least a few tools.
+We are gonna take a look at tools in Data Science and where they fit 🔎  
+Remember, Data Science is _much_ more than the tools involved. Still, we will need at least a few tools to get started: 🗂 **Spreadsheets**, 📊 **Tableau** for data visualization and 🌐 **Web formats** (not tools, but very informative!) 
 
-For getting started, we need spreadsheets, Tableau for data visualization, the format used in web data (not a tool but very informative). Essentials tools include R for data, the general purpose programming language Python, and the database language SQL. Beyond that, there are the general purpose programming languages C, C++, Java used for high level production code, bash, and regex.
-Don't forget the Pareto principle. It states that for many outcomes, roughly 80% of consequences come from 20% of causes.
-![Pareto Principle with data tools](images/pareto_law.png)
-You don't have to know everything but you should focus on the tools that are going to be most productive for you.
+Essential tools include:  
+- 🛢 **SQL** (database language)  
+- 📈 **R** (for data)  
+- 🖥 General-purpose programming languages like **C, C++, Java** (used for high-level production code) and 🐍 **Python**  
+- 🛡 **Bash** (for shell interaction)  
+- 🎯 **Regex** (for text pattern matching)  
 
-## Applications
-We will talk about programs created to manipulate data.
+> **Pareto principle**: 80% of outcomes come from 20% of causes 💡
+![Pareto Principle with data tools](images/pareto_law.png)  
 
-### Spreadsheets
-They are easy to use and everywhere: a lot of companies use data in spreadsheets format. `.csv` is  sort of universal format for data transfer. Note that Excel is above Hadoop and Spark in the ranking of major big data fancy tools.
-Spreadsheets are goof for data browsing, sorting and rearranging data, finding and replacing, formatting (conditional formatting), for transposing data (switching rows and columns), for tracking changes (even though you might be using GitHub for that), for making pivot tables (to explore data intuitively), for arranging the output for consumptions.
-With spreadsheets, we need to make sure the data is **tidy** so it works well when transferring it. For that:
-column = variable, row = case, one sheet per file, and one level of measurement (individual, organization, state) per file.
+👉 You don't have to know *everything*. Instead, focus on the tools that are most productive for **you**!  
 
-### Tableau
-It is a visualization program. When we have data the most important thing to do is to look into that data. Tableau Public is the free version that publishes dashboards online.
+## 🛠 Applications  
+Let's talk about the programs created to manipulate data 💻  
 
-### SPSS
-Statistical Package for the Social Sciences is pretty big desktop program used in academic or medical research, business consulting and management. It is powerful but quite expensive.
-SPSS looks like Excel but with much more options, and has a lot of sample datasets. It generates an output file that can be downloaded. Syntax files offer the possibility to copy code and save it as a text file, so to replicate analyses.
+### 📄 Spreadsheets
+Spreadsheets are **everywhere** and super easy to use! Companies often store data in spreadsheet formats like `.csv` (a kind of universal format for data transfer).
 
-### [JASP](https://jasp-stats.org/)
-It is the free version of SPSS. It is also open source, intuitive, making analyses replicable and it includes Bayesian approaches. The layout is similar to SPSS.
-You can add the skewness or the kurtosis (measure of the presence of extreme values) in your data summary table. Note that you can also share the information online through [OSF (Open Science Framework)](https://osf.io/). 
+⚡ **Fun fact**: *Excel ranks above Hadoop and Spark in major "big data" fancy tool surveys!*
 
-### Other software
-There is so much more:
-- SAS: very powerful analytical program. The SAS University Edition is free for students. JMP is a visualization program from SASA.
-- STATA, Minilab, Matlab, Mathematica (language)
-- WolframAlpha: analyses, regression models, visualizations
-- For data mining: RapidMiner, KNIME, Orange.
-- For Machine Learning: BigML.
-- SOFA (Stats Open For All) Statistics, Past 3, StatCrunch for basic stats and learning.
-- XLSTAT: an add-in to get a lot of stats functions within Excel.
+Main uses:
 
-Note you don't even have to try all of them. You should just use what works for you. Think of functionality, ease of use, the existence of a community (to solve problems you'll face), the cost, all this to reach you goals.
+- Data browsing
+- Sorting & rearranging
+- Finding & replacing
+- Conditional formatting
+- Transposing data (switching rows and columns)
+- Tracking changes (even if you're using GitHub)
+- Making Pivot Tables (exploring data intuitively)
+- Arranging outputs for consumption
+
+**Tidy Data Rules**:
+  - ✅ Column = variable
+  - ✅ Row = case
+  - ✅ One sheet per file
+  - ✅ One level of measurement (individual, organization, state) per file
+
+### 📊 Tableau 
+When you have data, **looking into it** visually is essential. For that you can use visualization programs like Tableau 🎨 
+
+> **Tableau Public** = Free version that publishes dashboards online
+
+### 📈 SPSS 🔬
+
+**SPSS** (*Statistical Package for the Social Sciences*) is a popular, heavy-duty desktop program, widely used in academic or medical research, business consulting and management.
+
+SPSS looks like Excel, but with many more options 🔥
+
+- Comes with a lot of sample datasets
+- Generates downloadable output files
+- Syntax files (saved code) allow you to **save and replicate** your analyses
+
+*Note*: It's powerful but quite expensive.
+
+### 🧠 [JASP](https://jasp-stats.org/) 🆓 
+Very intuitive, JASP is the **free**, open-source alternative to SPSS:  
+- Layout similar to SPSS  
+- **supports Bayesian analyses**  
+- Can add **skewness** and **kurtosis** (extreme values measure) in summary tables  
+- Share work through [OSF (Open Science Framework)](https://osf.io/) 📤  
+
+### ⚙️ Other Software
+
+There's so much more! 🎛
+
+- 🔥 **SAS**: Very powerful analytical program (*University Edition is free for students*)  
+- 🔵 **JMP** (from SAS): Focus on visualization  
+- 📈 **STATA**, **MiniTab**, **Matlab**, **Mathematica**  
+- 📊 **WolframAlpha**: Analyses, regressions, visualizations  
+- 💎 **RapidMiner**, **KNIME**, **Orange** for Data Mining  
+- 🧠 **BigML** for Machine Learning  
+- 📚 **SOFA** (Stats Open For All) **Statistics**, **Past 3**, **StatCrunch** for basic stats and learning  
+- 🧩 **XLSTAT** adds statistical functions to Excel  
+
+> 📝 You don't have to try them  _all_. Think functionalities, ease of use, community support, and cost.s
 
 
-## Web data
+## 🌍 Web Data
 
-### HTML
-**HTML** (Hyper Text Markup Language) is used to build the content of web pages from text and tags that define the document's structure. Some tags are: <*body*>...</*body*> for the text body, <*p*>...</*p*> for paragraphs, <*h1*>...</*h1*> for header 1, <*td*>...</*td*> for table data or the cell in a table. **CSS** (Cascading Style Sheets) helps to define the appearance of the document.
+### 📝 HTML / CSS
 
-### XML
-**XML** (eXtensible Markup Language) is semi-structured data, tags defining data so the computer knows what it is. Note that unlike HTML, the tags are free to be defined anyway we want. We will often see xml files in web data, Microsoft Office (.docx, .xlsx --> x for eXtensible), iTunes library information, data files. Tags also use opening and closing brackets: <*genre*>...</*genre*>. A right click on a web page followed by a left click on view page source helps to visualize the xml or html code of a web page. We can use APIs to access xml data and also convert xml data easily to different formats (xml to csv and vice versa, html to xml).
-
-### JSON
-Like XML, **JSON** (JavaScript Object Notation) is semi-structured data. When XML gives meaning to text and allows for comments and metadata in tags, JSON is specifically designed for data interchange, with a structure that corresponds with data structures: strings, dictionaries, etc.
-
-It is really easy to convert between the formats.
-
-
-## Languages
-
-### R programming
-![Data Science Languages Ranking](images/ds_languages.png)
-R is the language of data. It is free & open source, specially developed for vector operations, with a great community, and more than 7000 packages to add capabilities. For interfaces, you can use R's IDE or use the terminal directly, or R Studio.com, or even Jupyter. R is command line: you type lines of codes to get the commands outputs. It is nice for replicability.
-The beauty of R is in the packages available to extend its capabilities:
-- [CRAN](https://cran.rstudio.com/) (Comprehensive R Archive Network): organize packages in task views and for each one, we have datasets, manual in pdf formats and also vignettes illustrating examples.
-- Crantastic: an interface that links to CRAN but that shows the popularity and updates of packages. Unfortunately, it was removed from the Internet.
-
-
-### Python Programming
-It is a general purpose programming language that can do it all. Python is built-in on Mac or Linux, and has a great community with thousands of packages. The only problem is there is some compatibility versions between Python versions. Python has its own IDLE, but you can run it from the terminal or from a jupyter notebook (IPython: for Interactive Python or Python in Jupyter). There are also Continuum Analytics now [Anaconda](https://www.anaconda.com/download) & Enthought Canopy now [Enthought Deployment Manager](https://assets.enthought.com/downloads/) that offers Python distributions. Python is also command line: we are typing line to code. Data Science loves Jupyter and Jupyter loves data science: text output and markdown, inline graphics, ease to organize & present in notebooks. The main Python repository is **PyPI** (Python Package Index). Familiar packages are Numpy & Scipy for scientific computing, Matplotlib & Seaborn for data visualization, Pandas for statistical analyses and scikit-learn for ML.
-
-
-### SQL (Structured Query Language)
-It is the language of databases (where the data is), that can be used i different applications. It is designed for relational databases, which are ways of storing structured data, and helps manipulate data s we can export them into analytical applications.
-**RDBMS** are relational database management systems  where we usually manipulate data with SQL. Some free an open source versions are Oracle Database, Microsoft SQL Server, MySQL, PostgreSQL. Databases minimize redundancy by using connected tables. There are some graphical user interfaces (GUI) like: SQL Developer, SQL Server Management Studio, [Toad](https://toadworld.com/products/), etc. and also any command line interface or any interactive development environment or programming tool.
-Some basic SQL commands are: 
-```sql
-Select -- to choose the case to include
-From -- to specify the table
-Where -- for conditions
-Order by -- order to put them together
+🔹 **HTML** (*Hyper Text Markup Language*) builds web page content using text and tags that define the document's structure. 
+Basic Tags:  
+```html
+<body>...</body>  <!-- Text body -->
+<p>...</p>        <!-- Paragraph -->
+<h1>...</h1>      <!-- Header 1 -->
+<td>...</td>      <!-- Table data (cell) -->
 ```
-You don't have to be a ninja. Handful commands will be enough.
+🔹 **CSS** (*Cascading Style Sheets*) controls **appearance** and **layout**.
 
 
-### C, C++, Java
-There are most often seen in the bedrock: the absolute fundamental layer that makes the rest of data science possible.
-**C** and **C++** are from 1960s and 1980s. They are widely used, and very fast and stable, which makes them suitable for production level code and sever use. They can be used in R.
-**Java** is based on C/C++, and can be run anywhere (WORA: write once run everywhere). Its portability makes it the most popular language overall against all tech situations. When something has to be fast and should not break, it is generally used, and typically by engineers (for the back end of data science).
+### 🗃 XML
+
+**XML** (*eXtensible Markup Language*) defines **semi-structured data** using tags. Unlike HTML, you can **define your own tags**! Ex: `<genre>…</genre>`.
+
+You will often see XML in:
+
+- Microsoft Office files (.docx, .xlsx ➡️ *x for eXtensible*)
+- iTunes libraries information
+- Data files online
+
+🔍 **Tip**:  
+Right-click ➡️ *View page source* to see the HTML/XML code!
+
+🛠 You can use APIs to access XML data, and also easily convert:
+
+- XML ⇄ CSV
+- HTML ⇄ XML  
+
+### 📦 JSON   
+Like XML, **JSON** (*JavaScript Object Notation*) is **semi-structured** data. When XML gives meaning to text and allows for comments and metadata in tags, JSON is **specifically** designed for **data interchange**. Concise and suitable for web APIs, it maps directly to data structures like **strings**, **dictionaries**, etc.
+
+> Conversion between  JSON, CSV, XML formats is really easy.
 
 
-### Bash
-It is accessible on the command line interface: which is only a method of interacting. Shells are languages that help the user interact with the operating system. On Macs & Linux, the most common is **Bash**: Bourne Again Shell. On Windows, there is **PowerShell**. There are other versions: Bourne Shell, C Shell, Z Shell, fish, etc.
-Good to know:
-- $ indicates the prompt (type your command here).
-- We type one line at a time.
-- we can run scripts to execute more than one line.
-In Bash, there are utilities (specific programs accomplishing specific tools). There are tw categories of utilities:
-- **Built-ins**: *cat*: catenate to put information together, *awk* for text processing, *grep* for global search with a regular expression and print, *sed* for stream editor, to transform text. Some others are *head* & *tail*, to display the first or last lines of a document, *sort* & *uniq* to sort and count unique answer in a document, *wc* for the words count, and *printf* to format the output in the console.
-- **Installables**: *jq* for pulling in json data from the web, *json2csv* for file conversion, *Rio* to run R commands as part of bash, *BigMLer* to access BigML server through the command line. 
+## 💻 Languages 🔤
 
-Utilities are fast easy and very practical.
+### 📈 R Programming 🦊  
+![Data Science Languages Ranking](images/ds_languages.png)
+
+**R** is the **language of data**! 📊  
+Free, open source, specially developed for vectorized operations, with a **great community**, and **7000+ packages** for more capabilities!
+
+Interfaces include R's built-in IDE, RStudio.com, the terminal and Jupyter
+
+💡 **R is command line**: Typing commands -> outputs = **better replicability**.
+
+🛒 Where to find packages:
+
+- [CRAN (Comprehensive R Archive Network)](https://cran.rstudio.com/): organize packages in task views, each package with datasets, manuals (PDF), vignettes (example use cases)  
+- Crantastic (now defunct) used to show popularity and updates of packages.
 
 
-### Regex
-To be able to find the things you are looking for, regular expressions is a great method. Regular expressions are a form of pattern matching in text. We can write specific or very general patterns to search data and export it elsewhere for analyses. To search for text, in all text files in ".txt" format, that start with "l" and then continues with one character following, and then with "ve", we can write:
+
+### 🐍 Python Programming
+
+**Python** is a **do-it-all** command line language! 🌍 It comes built-in on Mac/Linux, with a huge community and thousands of packages.
+
+⚠️ **Note**:  
+Some version compatibility issues exist between Python versions. 
+
+Interfaces include Python IDLE, the terminal and Jupyter Notebooks (IPython = Interactive Python).
+
+**Popular distributions**:
+- [Anaconda](https://www.anaconda.com/download)
+- [Enthought Deployment Manager](https://assets.enthought.com/downloads/)
+
+🎯 **Loved for**:  
+Text outputs, markdown, inline graphics, notebook organization!
+
+🛒 Main Python repository: **PyPI** (Python Package Index).
+
+Familiar packages:
+
+- 🔢 Numpy, Scipy: Scientific computing
+- 📈 Matplotlib, Seaborn: Visualization
+- 🧮 Pandas: Data analysis
+- 🤖 Scikit-learn: Machine Learning
+
+
+### 🛢 SQL (Structured Query Language)
+
+**SQL** = language of **databases** 📚 It is designed for **relational databases** (ways of storing data) and helps manipulate data that can be exported to analytic tools, while minimizing redundancy with connected tables.
+
+> Popular RDBMS (Relational Database Management Systems) are Oracle Database, Microsoft SQL Server, MySQL and PostgreSQL. There are some graphical user interfaces (GUI) like: SQL Developer, SSMS (SQL Server Management Studio), [Toad](https://toadworld.com/products/)
+
+Basic SQL commands:
+
+```sql
+SELECT   -- Choose the cases
+FROM     -- Specify the table
+WHERE    -- Conditions
+ORDER BY -- Order the output
+```
+
+✨ **Good news**:  
+You don't have to be a ninja. A few commands go a long way!
+
+
+### ⚙️ C, C++, Java
+
+**The bedrock** languages often seen in the absolute fundamental layer that makes the rest of data science possible! 🧱
+
+- **C** (1960s) and **C++** (1980s): Fast, stable, great for production-level code and server use.
+- **Java**: Built on C/C++, and **Write Once, Run Anywhere** (WORA)! 
+
+These languages are typically used by **engineers**, especially for back-end data science when:
+
+- Systems must be *fast* ⚡  
+- Systems must *not break* 🔒  
+
+
+### 🖥 Bash
+
+**Bash (Bourne Again Shell)** = command line interface or shell for interacting with the OS (Unix/Mac). 🐚 On Windows, the equivalent is **PowerShell**. Other versions include Bourne Shell, C Shell, Z Shell, fish.
+
+Key concepts:
+
+- `$` indicates a command prompt
+- Type commands one line at a time
+- Use scripts to automate multiple commands
+
+🔧 Utilities (specific programs/tools accomplishing specific tasks) in Bash are classified into two categories:
+
+- **Built-ins**:
+
+  - `cat` (concatenate)
+  - `awk` (text processing)
+  - `grep` (search text with patterns)
+  - `sed` (stream editor)
+  - `head`, `tail` (first/last lines)
+  - `sort`, `uniq` (sort/count unique)
+  - `wc` (word count)
+  - `printf` (format output)
+
+- **Installables**:
+
+  - `jq` (for pulling-in JSON data from the web)
+  - `json2csv` (convert JSON to CSV)
+  - `Rio` (run R commands in bash)
+  - `BigMLer` (access BigML server via CLI)
+
+✨ **Utilities are fast, easy, and super practical! and scripts very useful to automate multi-step workflows.**
+
+
+### 🔍 Regex (Regular Expressions)
+
+Regex = **powerful pattern matching** for text search & extraction 🎯
+
+Example:  
+Find all `.txt` files where the text starts with "l", then a character, then "ve":
+
 ```bash
 grep ^l.ve *.txt
 ```
 In terms of the actual notes involved in regular expressions, there are certain elements:
-- **literals**: that mean exactly what they are, i.e: "l"
-- **metacharacters**: sort of characters specifying things need to be there, i.e: "."
-- **escape sequences**: to look for a period as opposed to a placeholder, i.e: "\n"
-- **search expression**: the expression created, i.e: "^l.ve"
-- **target string**: the thing we are searching through, i.e: *.txt for files when using grep.
+  - **Literals**: match themselves, e.g. `l`
+  - **Metacharacters**: placeholders, e.g. `.`
+  - **Escape sequences**: `\n`, `\.`, etc.
+  - **Search expression**: the full regex pattern, e.g: "^l.ve"
+  - **Target string**: the text/files you're searching, e.g: *.txt for files when using grep.
 ![Quick Search](images/regex_elts.png)
-[Regex Golf](http://alf.nu/RegexGolf) is a nice platform to play with regular expressions.
+
+Try [Regex Golf](http://alf.nu/RegexGolf) to sharpen your skills!
 
 
-## Conclusion
+## Conclusion 🎯   
+Tools are _means_, not the end. Data science is much more: problem framing, communication, domain knowledge, and ethics. Start with the essentials, master what aligns with your goals, and keep focusing on extracting meaning from data!
 
-You can start working with some tools but remember t=data tools are different from data science. Data Science is much more!!! Tools are just means and you do not need to know all of them. Focus on what is most suitable to you and your goals of extracting meaning from data. Here are some recommendations:
-[Tools Recommendations](images/coding_tools.png)
+![Tools Recommendations](images/coding_tools.png)
 
 ---
 
@@ -675,3 +809,16 @@ This step helps checking the validity of the model and build confidence in the u
 Do it Yourself. Data science is democratic. You just need to get started. You can do it. There is a lot of active development but cutting edge developments don't make that much difference in the interpretation. Just pay attention matching methods to your goals in order to build something that can be used. Remember everything has meaning. The meaning might not be what you expect, so it is important to listen carefully. No analysis is perfect. The question is: can it add value? Note there is always something to work on... Explore and write what you know... Just get started...
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
